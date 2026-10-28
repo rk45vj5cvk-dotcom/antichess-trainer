@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Antichess Trainer",
+    "slug": "antichess-trainer",
+    "scheme": "antichesstrainer",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {"supportsTablet": true},
+    "android": {"edgeToEdgeEnabled": true},
+    "plugins": ["expo-status-bar"],
+    "extra": {"subscription": {"monthlyProductId": "antichess_pro_monthly", "entitlementId": "pro"}}
+  }
+}
