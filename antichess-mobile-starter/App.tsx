@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useAudioPlayer } from 'expo-audio';
+import { completedStudy } from './src/completedStudy';
 import {
   SafeAreaView, ScrollView, View, Text, Pressable, useWindowDimensions,
   TextInput, StyleSheet,
@@ -21,35 +23,7 @@ type Line = {
 };
 type Course = { title: string; lines: Line[] };
 
-const study = `
-[Event "Punishing the Suicide Defense: Chapter 1"]
-[StudyName "Punishing the Suicide Defense"]
-[ChapterName "Chapter 1"]
-[Variant "Antichess"]
-[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]
-[SetUp "1"]
-[Result "*"]
-
-{ The Suicide defense is one of black's choices for responding to the most popular opening in antithesis: e3. It is not a good choice for black! Play e3 }
-1. e3 b5 2. Bxb5 Bb7
-{ Black's Bb7 is the start of the Suicide Defense. Let's learn how to punish this mistake. } *
-
-[Event "Punishing the Suicide Defense: Chapter 2"]
-[StudyName "Punishing the Suicide Defense"]
-[ChapterName "Chapter 2"]
-[Variant "Antichess"]
-[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]
-[SetUp "1"]
-[Result "*"]
-
-1. e3 b5 2. Bxb5 Bb7 3. Bxd7
-{ Black will always take with the bishop. If black takes the white bishop with one of his pieces, it's an immediate win for white. }
-3... Bxg2 4. Bxe8
-{ Black has two choices here, both roughly equivalent: Bxh1 or Qxd2. If Qxd2, white just recaptures. Of course, white has four choices so we'll talk about those. For this trainer, we will continue by having black take with the bishop. Nothing changes, however, if black reverses the order. }
-4... Bxh1 5. Bxf7 Qxd2
-{ Here, white plays either Bxd2 or Kxd2. The one thing you want to avoid is Bxg8 because it'll lose you the game. }
-6. Bxd2 *
-`;
+const study = completedStudy;
 
 function position(fen: string) {
   return Antichess.fromSetup(parseFen(fen).unwrap()).unwrap();
@@ -152,13 +126,15 @@ function Button({ title, onPress }: { title: string; onPress: () => void }) {
 
 function Board({
   line, color, title, chapterIndex, chapterCount,
-  onClose, onPreviousChapter, onNextChapter,
+  onClose, onPreviousChapter, onNextChapter, soundEnabled, onToggleSound,
 }: {
   line: Line;
   color: 'white' | 'black';
   title: string;
   chapterIndex: number;
   chapterCount: number;
+  soundEnabled: boolean;
+  onToggleSound: () => void;
   onClose: () => void;
   onPreviousChapter: () => void;
   onNextChapter: () => void;
@@ -174,6 +150,48 @@ function Board({
   const [selected, setSelected] = useState<number>();
   const [promotionTo, setPromotionTo] = useState<number>();
   const [message, setMessage] = useState('');
+  const knockA = useAudioPlayer(require('./assets/wood-knock.wav'));
+  const knockB = useAudioPlayer(require('./assets/wood-knock.wav'));
+  const previousPly = useRef(ply);
+  const nextSound = useRef(0);
+  const replyTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  function cancelReply() {
+    if (replyTimer.current !== undefined) {
+      clearTimeout(replyTimer.current);
+      replyTimer.current = undefined;
+    }
+  }
+
+  useEffect(() => {
+    return () => {
+      if (replyTimer.current !== undefined) {
+        clearTimeout(replyTimer.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const advanced = ply > previousPly.current;
+    previousPly.current = ply;
+    if (!advanced || !soundEnabled) return;
+
+    // Alternate players so a reply cannot cut off your move sound.
+    const player = nextSound.current++ % 2 === 0 ? knockA : knockB;
+    let cancelled = false;
+
+    async function playKnock() {
+      try {
+        await player.seekTo(0);
+        if (!cancelled) player.play();
+      } catch (error) {
+        console.warn('Move sound unavailable:', error);
+      }
+    }
+    void playKnock();
+    return () => { cancelled = true; };
+  }, [ply, soundEnabled, knockA, knockB]);
+
   const [commentFrom, setCommentFrom] = useState(0);
 
   const pos = position(line.fen);
@@ -189,6 +207,7 @@ function Board({
   }
 
   function reset(next: 'learn' | 'drill') {
+    cancelReply();
     setMode(next);
     setCommentFrom(0);
     setPly(next === 'drill' ? withOpponentReplies(0) : 0);
@@ -212,9 +231,18 @@ function Board({
       return;
     }
 
+    cancelReply();
     const next = withOpponentReplies(ply + 1);
     setCommentFrom(ply + 1);
-    setPly(next);
+
+    // Show and sound your move first, then the authored reply.
+    setPly(ply + 1);
+    if (next > ply + 1) {
+      replyTimer.current = setTimeout(() => {
+        replyTimer.current = undefined;
+        setPly(next);
+      }, 280);
+    }
     setSelected(undefined);
     setMessage(next === line.moves.length
       ? 'Chapter complete! This is the end of the line, not necessarily the game.'
@@ -222,7 +250,7 @@ function Board({
   }
 
   function tap(square: number) {
-    if (ply === line.moves.length) return;
+    if (ply === line.moves.length || pos.turn !== color) return;
     if (pos.board.get(square)?.color === pos.turn) {
       setSelected(square);
       setPromotionTo(undefined);
@@ -323,8 +351,43 @@ function Board({
     <View style={{
       width: boardSize, height: boardSize,
       alignSelf: 'center',
-      flexDirection: 'row', flexWrap: 'wrap',
     }}>
+      <View pointerEvents="none" style={{
+        position: 'absolute', left: 0, top: 0,
+        width: 16, height: boardSize - 16,
+      }}>
+        {Array.from({ length: 8 }, (_, i) =>
+          <View key={i} style={{
+            height: '12.5%', alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <Text style={{ color: '#aaaaaa', fontSize: 11 }}>
+              {makeSquare(squares[i * 8])[1]}
+            </Text>
+          </View>
+        )}
+      </View>
+      <View pointerEvents="none" style={{
+        position: 'absolute', left: 16, bottom: 0,
+        width: boardSize - 16, height: 16,
+        flexDirection: 'row',
+      }}>
+        {Array.from({ length: 8 }, (_, i) =>
+          <View key={i} style={{
+            width: '12.5%', alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <Text style={{ color: '#aaaaaa', fontSize: 11 }}>
+              {makeSquare(squares[56 + i])[0]}
+            </Text>
+          </View>
+        )}
+      </View>
+      <View style={{
+        position: 'absolute', left: 16, top: 0,
+        width: boardSize - 16, height: boardSize - 16,
+        flexDirection: 'row', flexWrap: 'wrap',
+      }}>
       {squares.map(square => {
         const piece = pos.board.get(square);
         return <Pressable
@@ -351,9 +414,10 @@ function Board({
               width="100%" height="100%"
             />}
           </View>
-          <Text style={s.coordinate}>{makeSquare(square)}</Text>
+
         </Pressable>;
       })}
+      </View>
     </View>
 
     <View style={{ height: 100, gap: 6 }}>
@@ -389,6 +453,16 @@ function Board({
         alignItems: 'center',
         height: 44,
       }}>
+        <Pressable
+          accessibilityRole="switch"
+          accessibilityLabel="Move sounds"
+          accessibilityState={{ checked: soundEnabled }}
+          onPress={onToggleSound}
+          hitSlop={8}>
+          <Text style={{ color: '#eeeeee', fontSize: 13 }}>
+            {soundEnabled ? 'Sound on' : 'Muted'}
+          </Text>
+        </Pressable>
         <Pressable onPress={() => reset(mode)} hitSlop={8}>
           <Text style={{ color: '#eeeeee', fontSize: 14 }}>Restart</Text>
         </Pressable>
@@ -401,6 +475,7 @@ function Board({
         </Pressable>
         <Pressable accessibilityLabel="Previous move"
           onPress={() => {
+            cancelReply();
             const n = Math.max(0, ply - 1);
             setPly(n); setCommentFrom(n); setSelected(undefined);
             setPromotionTo(undefined); setMessage(''); setMode('learn');
@@ -409,6 +484,7 @@ function Board({
         </Pressable>
         <Pressable accessibilityLabel="Next move"
           onPress={() => {
+            cancelReply();
             const n = Math.min(line.moves.length, ply + 1);
             setPly(n); setCommentFrom(n); setSelected(undefined);
             setPromotionTo(undefined); setMessage(''); setMode('learn');
@@ -430,6 +506,7 @@ function Board({
 
 export default function App() {
   const [courses, setCourses] = useState([initialCourse]);
+  const [soundEnabled, setSoundEnabled] = useState(true);
   const [active, setActive] = useState<number>();
   const [chapter, setChapter] = useState<number>();
   const [color, setColor] = useState<'white' | 'black'>('white');
@@ -442,7 +519,7 @@ export default function App() {
       const imported = readCourse(input);
       setCourses(old => [...old, imported]);
       setActive(courses.length);
-      setChapter(undefined);
+      setChapter(0);
       setInput('');
       setError('');
     } catch (e) {
@@ -459,11 +536,18 @@ export default function App() {
         title={course.title}
         chapterIndex={chapter}
         chapterCount={course.lines.length}
-        onClose={() => setChapter(undefined)}
+        soundEnabled={soundEnabled}
+        onToggleSound={() => setSoundEnabled(value => !value)}
+        onClose={() => { setChapter(undefined); setActive(undefined); }}
         onPreviousChapter={() => setChapter(Math.max(0, chapter - 1))}
-        onNextChapter={() => setChapter(
-          chapter + 1 < course.lines.length ? chapter + 1 : undefined
-        )}
+        onNextChapter={() => {
+          if (chapter + 1 < course.lines.length) {
+            setChapter(chapter + 1);
+          } else {
+            setChapter(undefined);
+            setActive(undefined);
+          }
+        }}
       />
     </SafeAreaView>;
   }
@@ -476,7 +560,7 @@ export default function App() {
         {courses.map((item, i) =>
           <Button key={i}
             title={`${item.title} · ${item.lines.length} chapters`}
-            onPress={() => { setActive(i); setChapter(undefined); }} />)}
+            onPress={() => { setActive(i); setChapter(0); }} />)}
         <Text style={s.heading}>Import another study</Text>
         <Text style={s.text}>
           Paste an Antichess PGN. Extra imports last until the app reloads.
