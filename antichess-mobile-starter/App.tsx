@@ -156,9 +156,26 @@ function Board({
   const moveB = useAudioPlayer(require('./assets/Move.wav'));
   const captureA = useAudioPlayer(require('./assets/capture.wav'));
   const captureB = useAudioPlayer(require('./assets/capture.wav'));
+  const completionPlayer = useAudioPlayer(require('./assets/line-complete.wav'));
+  const complete = ply === line.moves.length;
+  const wasComplete = useRef(complete);
   const previousPly = useRef(ply);
   const nextSound = useRef(0);
   const replyTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  useEffect(() => {
+    const justCompleted = complete && !wasComplete.current;
+    wasComplete.current = complete;
+    if (!justCompleted || !soundEnabled) return;
+    let cancelled = false;
+    // Let the final move sound finish before the completion click.
+    const timer = setTimeout(() => {
+      void completionPlayer.seekTo(0).then(() => {
+        if (!cancelled) completionPlayer.play();
+      }).catch(error => console.warn('Completion sound unavailable:', error));
+    }, 120);
+    return () => { cancelled = true; clearTimeout(timer); };
+  }, [complete, soundEnabled, completionPlayer]);
 
   function cancelReply() {
     if (replyTimer.current !== undefined) {
@@ -292,6 +309,7 @@ function Board({
       }
     }
   }
+  if (complete) commentary = [...commentary, 'Click Next Line.'];
 
   const squares = Array.from({ length: 64 }, (_, i) =>
     color === 'white'
@@ -509,9 +527,15 @@ function Board({
         <Pressable
           accessibilityLabel={chapterIndex + 1 < chapterCount
             ? 'Next chapter' : 'Return to chapters'}
-          onPress={onNextChapter} hitSlop={8}>
+          onPress={onNextChapter} hitSlop={8}
+          style={{
+            borderWidth: 2,
+            borderColor: complete ? '#4ade80' : 'transparent',
+            backgroundColor: complete ? '#14532d' : 'transparent',
+            paddingHorizontal: 6, paddingVertical: 7,
+          }}>
           <Text style={{ color: '#eeeeee', fontSize: 14 }}>
-            {chapterIndex + 1 < chapterCount ? 'Next line' : 'Done'}
+            Next line
           </Text>
         </Pressable>
       </View>}
