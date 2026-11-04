@@ -152,6 +152,7 @@ function Board({
   const [mode, setMode] = useState<'learn' | 'drill'>('learn');
   const [ply, setPly] = useState(0);
   const [selected, setSelected] = useState<number>();
+  const [wrongDestination, setWrongDestination] = useState<number>();
   const [promotionTo, setPromotionTo] = useState<number>();
   const [message, setMessage] = useState('');
   const moveA = useAudioPlayer(require('./assets/Move.wav'));
@@ -230,6 +231,15 @@ function Board({
 
   const pos = position(line.fen);
   for (const uci of line.moves.slice(0, ply)) pos.play(parseUci(uci)!);
+  const legalDestinations = selected === undefined ? undefined : pos.dests(selected);
+  const lastMove = ply > 0 ? parseUci(line.moves[ply - 1]) : undefined;
+
+  function clearMistake() {
+    setWrongDestination(undefined);
+    setSelected(undefined);
+    setPromotionTo(undefined);
+    setMessage('');
+  }
 
   function withOpponentReplies(n: number) {
     const p = position(line.fen);
@@ -242,6 +252,7 @@ function Board({
 
   function reset(next: 'learn' | 'drill') {
     cancelReply();
+    clearMistake();
     setMode(next);
     setCommentFrom(0);
     setPly(next === 'drill' ? withOpponentReplies(0) : 0);
@@ -256,16 +267,20 @@ function Board({
     setPromotionTo(undefined);
 
     if (!pos.isLegal(move)) {
+      setWrongDestination(to);
+      setSelected(undefined);
       setMessage('Illegal move. Remember: captures are mandatory when available.');
       return;
     }
     if (makeUci(move) !== line.moves[ply]) {
+      setWrongDestination(to);
       setMessage('Legal move, but not the authored line. Try again.');
       setSelected(undefined);
       return;
     }
 
     cancelReply();
+    setWrongDestination(undefined);
     const next = withOpponentReplies(ply + 1);
     setCommentFrom(ply + 1);
 
@@ -286,6 +301,7 @@ function Board({
   function tap(square: number) {
     if (ply === line.moves.length || pos.turn !== color) return;
     if (pos.board.get(square)?.color === pos.turn) {
+      setWrongDestination(undefined);
       setSelected(square);
       setPromotionTo(undefined);
       setMessage('');
@@ -381,6 +397,19 @@ function Board({
           color: '#666666', fontSize: 17, lineHeight: 24,
         }}>No study comment at this position.</Text>}
       </ScrollView>
+      {wrongDestination !== undefined && <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Try again"
+        onPress={clearMistake}
+        style={{
+          alignSelf: 'flex-start', marginHorizontal: 16, marginBottom: 12,
+          paddingHorizontal: 18, paddingVertical: 10,
+          backgroundColor: '#b91c1c', borderRadius: 6,
+        }}>
+        <Text style={{ color: '#ffffff', fontSize: 16, fontWeight: '700' }}>
+          Try again
+        </Text>
+      </Pressable>}
     </View>
 
     <View style={{
@@ -429,7 +458,10 @@ function Board({
           key={square}
           accessibilityRole="button"
           accessibilityLabel={makeSquare(square) + ' ' +
-            (piece ? piece.color + ' ' + piece.role : 'empty')}
+            (piece ? piece.color + ' ' + piece.role : 'empty') +
+            (legalDestinations?.has(square) ? ', legal destination' : '') +
+            (wrongDestination === square ? ', incorrect destination' : '')}
+          accessibilityState={{ selected: selected === square }}
           onPress={() => tap(square)}
           style={[s.square, {
             backgroundColor: selected === square ? '#e5be50'
@@ -437,6 +469,12 @@ function Board({
                 ? '#f0d9b5' : '#b58863',
           }]}
         >
+          {lastMove && 'from' in lastMove &&
+            (lastMove.from === square || lastMove.to === square) &&
+            selected !== square && <View pointerEvents="none" style={{
+              position: 'absolute', top: 0, right: 0, bottom: 0, left: 0,
+              backgroundColor: 'rgba(255, 244, 143, 0.48)',
+            }} />}
           <View pointerEvents="none" style={{
             width: '88%', height: '88%',
           }}>
@@ -449,7 +487,17 @@ function Board({
               width="100%" height="100%"
             />}
           </View>
-
+          {legalDestinations?.has(square) && <View pointerEvents="none" style={{
+            position: 'absolute', width: '28%', height: '28%',
+            borderRadius: 100, backgroundColor: 'rgba(95, 95, 95, 0.42)',
+          }} />}
+          {wrongDestination === square && <Text
+            pointerEvents="none"
+            style={{
+              position: 'absolute', top: 0, right: 1,
+              color: '#dc2626', fontSize: 19, lineHeight: 21, fontWeight: '900',
+              backgroundColor: 'rgba(255,255,255,0.85)', borderRadius: 3,
+            }}>×</Text>}
         </Pressable>;
       })}
       </View>
@@ -511,6 +559,7 @@ function Board({
         <Pressable accessibilityLabel="Previous move"
           onPress={() => {
             cancelReply();
+            clearMistake();
             const n = Math.max(0, ply - 1);
             setPly(n); setCommentFrom(n); setSelected(undefined);
             setPromotionTo(undefined); setMessage(''); setMode('learn');
@@ -520,6 +569,7 @@ function Board({
         <Pressable accessibilityLabel="Next move"
           onPress={() => {
             cancelReply();
+            clearMistake();
             const n = Math.min(line.moves.length, ply + 1);
             setPly(n); setCommentFrom(n); setSelected(undefined);
             setPromotionTo(undefined); setMessage(''); setMode('learn');
