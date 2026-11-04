@@ -43,17 +43,6 @@ NOTE: All of these variations assume black plays 4...Bxe2 (and doesn't play a qu
 
 [Event "Wizard Opening"]
 [StudyName "Wizard Opening"]
-[ChapterName "Qxa2: Qxa1 and the rook sacrifice — complete line"]
-[Variant "Antichess"]
-[Result "*"]
-[Annotator "Adapted from Dy1ar’s Lichess study f3NuTHGo"]
-
-{ Train as White. Replay this line from the initial position. }
-1. c4 d5 2. cxd5 Qxd5 3. g4 { Bring out the black bishop. If you don't, it leads to a stronger position for black. } Bxg4 4. Qa4 { That's the one. You should always play this. You'll see why as we progress through the lesson. However, just keep in mind that Qa4 gives white maximum mobility. } Bxe2 { Could black have taken a piece with the queen instead? Yes. Qxa2 is a loss for black. So is Qxh1. And so is Qxd2. Are they easy wins for white to find? No, but people rarely play them. Bxe2 is played 85-90% of the time. Still, we will revisit these losing moves for black later in the lesson. } 5. Nxe2 { Taking with the knight is the strongest move. Other moves are playable, but white's position will be weaker. This is where the intro ends. Black can take on a2, d2, and h1. We will look at all of these lines and the playable variations.
-NOTE: All of these variations assume black plays 4...Bxe2 (and doesn't play a queen move instead). Variations in strategy arise if black leaves the bishop on the board, but most ideas still apply. } { As soon as black plays Qxa2, it's a loss. The lines can get complicated, but rely on your confidence that you have already won. The Qxa2 lines aren't that difficult to remember. } Qxa2 6. Qxe8 Qxa1 { We're going in order from left to right: Qxa1, Qxb1, Qxb2. Those are black's three possible moves here. This one is easiest. } 7. Qxb8 { The most popular move for white here is to blow the win by taking on f7. Here's a shorthand to remember this correct move: if the black queen "runs away" into the corner, "chase it" by taking the piece closest to it. That's the knight on b8. } Qxb1 { Qxb1 is black's best move. The other possible moves are shown in the two quizzes in the chapters that follow this one--they're pretty easy wins for white. This one is slightly harder. } 8. Qxa7 { This is actually the only move that maintains the forced win for white. } Rxa7 { Things start to get a little tricky here. If the queen had taken on b2 or c1 instead of Rxa7, it's an easy win for white--you just recapture the queen. See if you can find white's next move! } 9. Rg1 { That's a tough one to remember. If you've made it this far, though, you can close the deal. This is really the only tricky move for white. Just remember: If you can't find a way to punish that queen, maybe you need to play another piece. Keep in mind that you've already won. Do not play a fearful, defensive move. Black can't do anything to you. Be aggressive. Black only has two moves here, and neither are good. You know what to do next. } Qxb2 { If black takes the bishop, you play the same next move. } 10. Rxg7 { Ahh, what is black to do? Nothing, that's what. It's over quickly from here! } Qxc1 11. Nxc1 Bxg7 12. d4 Bxd4 { There are several ways to finish things off from here. } 13. Kd1 Bxf2 14. h4 Bxh4 15. Na2 Rxa2 16. Kc2 Rxc2 17. Be2 Rxe2# *
-
-[Event "Wizard Opening"]
-[StudyName "Wizard Opening"]
 [ChapterName "Qxa2: Qxb1 and Rxa7 — through move 8"]
 [Variant "Antichess"]
 [Result "*"]

@@ -62,7 +62,9 @@ const chapters=[],seen=new Set();
 for (const {g,index} of sources) {
  const {moves,intro}=resolved.get(index);
  const endpoints=[15,27,39].filter(n=>n<moves.length-4);
- endpoints.push(moves.length);
+ // The user identified the full source-3 continuation (former chapter 5)
+ // as obvious clean-up. Keep its opening checkpoints without that drill.
+ if (index !== 3) endpoints.push(moves.length);
  for (const end of endpoints) {
   const part=moves.slice(0,end);
   const signature=part.map(m=>m.san.replace(/[+#]/g,'')).join(' ');
@@ -99,6 +101,7 @@ fs.writeFileSync(new URL('../studies/WIZARD_CHAPTERS.md',import.meta.url),
  'Quiz chapters are excluded. Only supplied main lines become drills; side variations remain in wizard-source.pgn.\n'+
  'Early Black deviations described in the source are connected by legally validated opening prefixes.\n'+
  'Long lines grow through checkpoints, then their complete supplied continuation. A checkpoint is not necessarily a win.\n\n'+
+ 'The former chapter 5 (source 3, full continuation) is omitted as obvious clean-up; its earlier opening checkpoints remain.\n\n'+
  '| Chapter | Lesson | Plies | Source chapter |\n|---|---|---|---|\n'+
  chapters.map((c,i)=>`| ${i+1} | ${c.title} | ${c.moves.length} | ${c.source} |`).join('\n')+'\n');
 console.log(`Built ${chapters.length} chapters from ${sources.length} non-quiz source chapters.`);

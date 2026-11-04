@@ -12,3 +12,8 @@ The Wizard source is preserved in studies/wizard-source.pgn. Rebuild the adapted
 module with node scripts/build-wizard.mjs; review studies/WIZARD_CHAPTERS.md for
 chapter order and provenance. Only source main lines are used for drills; source
 side variations can contain mistakes. Do not invent unsupplied continuations.
+
+Stop opening drills before obvious forced-win clean-up, where a human can
+finish simply in several ways. The user identified the original Wizard chapter
+5 as unnecessary clean-up: omit that full continuation while keeping its earlier
+checkpoints. Do not require memorization of one arbitrary clean-up sequence.
