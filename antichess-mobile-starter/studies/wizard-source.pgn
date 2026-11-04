@@ -1,0 +1,654 @@
+[Event "Let's Learn the Wizard Opening - antichess: Let's Learn the Wizard Opening"]
+[Date "2025.11.19"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Let's Learn the Wizard Opening"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/2XyP3a7c"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.19"]
+[UTCTime "03:24:35"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gc2c4] }
+1. c4 d5 { In this study, we will walk through the different lines that are possible after 1. c4 d5, which is known as the Wizard Opening. This lesson is created from white's perspective. Playing the classical Wizard 1. c4 d5 is not good for black. It is not a recommended defense to 1.c4, but people play it all the time so it's worth knowing. I created a different study that walks through these lines with explanations, but here we will study them as interactive lessons. } 2. cxd5 Qxd5 *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Getting Started"]
+[Date "2025.11.19"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Getting Started"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/aP4YH74o"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2025.11.19"]
+[UTCTime "03:32:23"]
+[ChapterMode "gamebook"]
+
+{ [%csl Gc2][%cal Gc2c4] }
+1. c4 { [%cal Gd7d5] } 1... d5 2. cxd5 Qxd5 3. g4 { Bring out the black bishop. If you don't, it leads to a stronger position for black. } 3... Bxg4 4. Qa4 { That's the one. You should always play this. You'll see why as we progress through the lesson. However, just keep in mind that Qa4 gives white maximum mobility. } (4. Qc2 { This isn't necessarily bad, but there's a better move. }) (4. Qb3 { The queen will take, and then white has a terrible position. } { [%cal Gd5b3] }) 4... Bxe2 { Could black have taken a piece with the queen instead? Yes. Qxa2 is a loss for black. So is Qxh1. And so is Qxd2. Are they easy wins for white to find? No, but people rarely play them. Bxe2 is played 85-90% of the time. Still, we will revisit these losing moves for black later in the lesson. } 5. Nxe2 { Taking with the knight is the strongest move. Other moves are playable, but white's position will be weaker. This is where the intro ends. Black can take on a2, d2, and h1. We will look at all of these lines and the playable variations.
+NOTE: All of these variations assume black plays 4...Bxe2 (and doesn't play a queen move instead). Variations in strategy arise if black leaves the bishop on the board, but most ideas still apply. } (5. Bxe2 { Playable, but black is going to leave white with an open center and some dangerous bishops. }) (5. Kxe2 { Playable, but black can put white in an uncomfortable spot with a less certain queen race. }) (5. Qxe8 { You leave black the option of taking on f1. Not necessarily a death sentence yet, but why give him the choice? }) *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxa2 (6. Qxe8 Qxa1 variation)"]
+[Date "2025.11.19"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxa2 (6. Qxe8 Qxa1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/AzMsB6DD"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/3q4/Q7/8/PP1PNP1P/RNB1KB1R b - - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.11.19"]
+[UTCTime "04:00:54"]
+[ChapterMode "gamebook"]
+
+{ As soon as black plays Qxa2, it's a loss. The lines can get complicated, but rely on your confidence that you have already won. The Qxa2 lines aren't that difficult to remember. } { [%cal Gd5a2] }
+5... Qxa2 6. Qxe8 Qxa1 { We're going in order from left to right: Qxa1, Qxb1, Qxb2. Those are black's three possible moves here. This one is easiest. } (6... Qxb2 7. Qxf7 Qxb1 8. Rxa7 Qxc1 9. Nxc1 Rxa7 10. Qxg7 Bxg7 11. Na2 Rxa2 12. d4) 7. Qxb8 { The most popular move for white here is to blow the win by taking on f7. Here's a shorthand to remember this correct move: if the black queen "runs away" into the corner, "chase it" by taking the piece closest to it. That's the knight on b8. } (7. Qxf7 { This move blows the forced win for white. White's chances are still good, but now it's a queen race where black has a chance. }) (7. Qxe7 { This move blows the forced win for white. White's chances are still good, but now it's a queen race where black has a chance. }) 7... Qxb1 { Qxb1 is black's best move. The other possible moves are shown in the two quizzes in the chapters that follow this one--they're pretty easy wins for white. This one is slightly harder. } 8. Qxa7 { This is actually the only move that maintains the forced win for white. } 8... Rxa7 { Things start to get a little tricky here. If the queen had taken on b2 or c1 instead of Rxa7, it's an easy win for white--you just recapture the queen. See if you can find white's next move! } 9. Rg1 { That's a tough one to remember. If you've made it this far, though, you can close the deal. This is really the only tricky move for white. Just remember: If you can't find a way to punish that queen, maybe you need to play another piece. Keep in mind that you've already won. Do not play a fearful, defensive move. Black can't do anything to you. Be aggressive. Black only has two moves here, and neither are good. You know what to do next. } 9... Qxb2 { If black takes the bishop, you play the same next move. } 10. Rxg7 { Ahh, what is black to do? Nothing, that's what. It's over quickly from here! } 10... Qxc1 11. Nxc1 Bxg7 12. d4 Bxd4 { There are several ways to finish things off from here. } 13. Kd1 Bxf2 14. h4 Bxh4 15. Na2 Rxa2 16. Kc2 Rxc2 17. Be2 Rxe2# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the Win"]
+[Date "2026.02.19"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the Win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/00qynhQL"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "1r3bnr/ppp1pppp/8/8/8/8/1P1PNP1P/qNB1KB1R w - - 0 8"]
+[SetUp "1"]
+[UTCDate "2026.02.19"]
+[UTCTime "17:01:21"]
+
+{ Black took the queen on b8! Can you find a way to win here? There are several ways to do it. Let's do it with ONLY the queen--no other black pieces can take. }
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/RWs1VcXJ"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rQ3bnr/ppp1pppp/8/8/8/8/1q1PNP1P/1NB1KB1R w - - 0 8"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "03:36:07"]
+
+{ Here, black took the pawn on b2 instead of the queen. Another pretty straightforward win for white. Can you find it? }
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxa2 (6. Qxe8 Qxb1 variation)"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxa2 (6. Qxe8 Qxb1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/snnondqJ"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/ppp1pppp/8/8/8/8/qP1PNP1P/RNB1KB1R b - - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "03:54:31"]
+[ChapterMode "gamebook"]
+
+{ This time, black's queen takes on b1, which is by far the least common choice for black. }
+6... Qxb1 7. Rxa7 { Mnemonic aid: If the queen tries to "sit down" beside the rook, run away as far as you can! Black has to take with the rook, which he does more than half the time. If he doesn't, just capture the queen on b2 or c1 and the win will be obvious. } (7. Qxf7 { This is fine to play. In many of these variations, f7 is our "safe space"--when in doubt, Qxf7 is generally safe. However, with this specific variation, there is an easier win that doesn't require an extended queen race. }) 7... Rxa7 8. Qxf7 { That's right, move to your safe space on f7. } (8. Qxf8 { No, you need to keep that bishop on the board }) (8. Qxe7 { This still maintains white's winning position, but it's a more complicated line than the correct move. }) 8... Qxc1 9. Qxg7 { Black can't take with the bishop, obviously. He also can't take on b2 because then Qxg8, bringing out the rook. All he can do it continue the queen race with Qxe1. } 9... Qxe1 10. Qxh7 { Taking on h7 forces the black queen to take on f2. Otherwise, you recapture the queen and that rook comes out. Qxh7 is the best move because it reduces black's options to a single move. } (10. Qxh8 { This works, but a different move leads to an easier finish for white. }) 10... Qxf2 11. Qxh8 { Yes--you want to continue the queen race at this point. If you keep your queen alive, black can't do anything. } (11. Qxe7 { This also works, but it leads to a more complicated line in my opinion. }) 11... Qxh2 { It doesn't matter what black does. Qxh2, Qxf1, and Qxe2 are all options, but white will make the same next move in all cases. } 12. Qxg8 Qxe2 { Black is not going to take the rook on h1 here, because then it's a straight run through all the rest of white's pieces. Taking on e2 appears to give him options (but it doesn't). } 13. Qxf8 Qxd2 { What if black would have taken the bishop instead? Well, play it out--still a quick loss. } 14. Qxb8 Qxb2 15. Qxb7 *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/PDCB5v2w"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/Rpp1pppp/8/8/8/8/1P1PNP1P/2q1KB1R w - - 0 7"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "04:07:35"]
+
+{ Black has made the unfortunate blunder of taking with the queen instead of the rook! Let's finish him off. }
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/XTNbxjEh"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/Rpp1pppp/8/8/8/8/1q1PNP1P/2B1KB1R w - - 0 7"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "04:10:01"]
+
+{ Oh oh! Black blundered again and took the pawn on b2. This one's easy. }
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxa2 (6. Qxe8 Qxb2 variation)"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxa2 (6. Qxe8 Qxb2 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/sGLcFfkx"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/ppp1pppp/8/8/8/8/qP1PNP1P/RNB1KB1R b - - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "04:35:30"]
+[ChapterMode "gamebook"]
+
+6... Qxb2 { This is the most commonly played 6th move for black. It is also slightly more difficult to play for white than the other lines. Most often, white plays Rxa7, but I think Qxf7 is a little easier to play for white. } 7. Qxf7 { If black plays Qxb1, then white has an easy win--just remember: if the black queen tries to sit beside your rook, run away (Rxa7)! Black's queen will be stuck with one option, Qxc1, which allows white to capture the queen and put an end to things quickly. If black doesn't play Qxb1? Well, it gets a little tricky. We will examine black's most common and strongest move first. } 7... Qxd2 { This is black's most common move. We aren't going to play the most efficient line, which would be white wins in 10 because it's a complicated queen race. You could memorize it, but instead, take black's queen and you have a much simpler win in 12! Which piece will you use? } 8. Bxd2 { Right! There aren't any great moves for black here. Most people play a5, which is an easy win for white. Watch out for the tricky a6! This one is easy enough that I'll make it into a quiz in the next chapter. } (8. Qxg7 { Right! What if black takes with the bishop? You take the queen and black will have to take the rook in the corner--easy win after that. Black HAS to keep the queen race going with Qxe1. } 8... Qxe1 { At this point, you're looking to extend the queen race--just move where black can't take your queen. } 9. Qxh8 { No matter what black does, you're going to avoid letting him take your queen. Things are...less straightforward if black decides to take the knight. You'll have to think hard. } (9. Qxf8 { This is wrong because white doesn't have a move to keep the queen alive after this. No matter where white moves the queen, black can capture it. This is actually a loss for white. Where can you move that will give you more options? }) (9. Qxg8 { Did you forget about your rook on a1? You can't let black capture that queen at the moment, because then it's a race of rook against queen, and a loss for white. }) 9... Qxf2 10. Qxg8) (8. Rxa7 { This works, but it gives white a more complicated path to victory. Good instinct--we will play this move eventually. }) (8. Qxf8 { Again, this works according to Stockfish, but it is super complicated. and one wrong move puts white in a losing position. }) 8... a6 *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win (a6 variation - rare but tricky)"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win (a6 variation - rare but tricky)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/OITlMWJB"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/1pp1pQpp/p7/8/8/8/3BNP1P/RN2KB1R w - - 0 9"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "18:13:53"]
+
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win (a5 variation)"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win (a5 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/L7UfKTfL"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/1pp1pQpp/8/p7/8/8/3BNP1P/RN2KB1R w - - 0 9"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "18:14:48"]
+
+{ Black typically plays a5 here. Any other move, aside from a6 (see previous chapter), makes it pretty simple for white to find the win. This one is moderately difficult, but not too bad. Just remember: you're trying to punish black's rook on a8. }
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxd2 (6. Qxe8 Qxb2 7. Qxe8 Qxb1 variation)"]
+[Date "2025.11.24"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxd2 (6. Qxe8 Qxb2 7. Qxe8 Qxb1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/as0UhFzP"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/3q4/Q7/8/PP1PNP1P/RNB1KB1R b - - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.11.24"]
+[UTCTime "22:40:30"]
+[ChapterMode "gamebook"]
+
+5... Qxd2 6. Qxe8 { That's right. The white queen will take on e8 in all cases. There are four possibilities for black here. We will look at the from left to right, beginning with Qxb2. } 6... Qxb2 { It's important here that white not move to the "safe space" with Qxf7. Instead, you take the bishop. Why? Because it will allow white to later play either Qxg8 or Qxb8, neutralizing the threat of the open bishops. } { [%cal Ge8f8] } 7. Qxf8 Qxe2 8. Bxe2 { Both bishops are now open, which looks scary, but (because we previously took the bishop instead of the pawn on f7) black cannot play b5 or g5 without exposing one of his rooks. } { [%cal Gf8g8,Gf8b8,Gb7b5,Gg7g5] } 8... Nh6 9. Qxb8 Raxb8 10. Bxh6 gxh6 11. Ba6 bxa6 { This is white's game now. There is no reason white should lose this. } *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxd2 (6. Qxe8 Qxb2 7. Qxf8 Qxb1 variation)"]
+[Date "2025.11.25"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxd2 (6. Qxe8 Qxb2 7. Qxf8 Qxb1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/LWJ9pieS"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3Qnr/ppp1pppp/8/8/8/8/Pq2NP1P/RNB1KB1R b - - 0 7"]
+[SetUp "1"]
+[UTCDate "2025.11.25"]
+[UTCTime "03:02:42"]
+[ChapterMode "gamebook"]
+
+{ In this line, black is going to play Qxb1 instead of Qxe2 (which we covered in the previous chapter). } { [%cal Gb2b1] }
+7... Qxb1 8. Qxg7 { If the black queen takes on the a file, it's over quickly. I'll make this into a quiz in the next chapter so you can work through it. Black's only real choice here is Qxc1. } { [%cal Gb1c1] } 8... Qxc1 9. Qxh7 { Black is in a tough spot here. Taking anything with the queen will allow white to release the h-file rook. The only decent option is to take the rook, which initiates a rook race. } 9... Rxh7 (9... Qxa1 10. Qxg8 Qxe1 11. Qxb8 Qxf2 12. Qxc7 Qxh2 13. Rxh2 Rxh2 14. Qxb7 Rxe2 15. Qxa7 Rxa7 16. Bxe2 Rxa2 17. Ba6 Rxa6#) 10. Rxc1 Rxh2 11. Rxc7 Rxf2 12. Rxb7 Rxe2 13. Kxe2 { This is clearly a difficult move to find. Notice that white's rook must be captured, whether it takes on a7 or e7. What if black plays Nh6? No good. White plays Rxa7, releasing black's rook. The only move that avoids immediate loss is a6. } { [%cal Ga7a6] } (13. Rxa7 Rxe1 14. Rxa8 Rxf1 15. Rxb8 Rxh1 16. Rxg8 Rh5 17. Rh8 Rxh8 18. a4 Rh6 19. a5 Rh5 20. a6 Rc5 21. a7 Rd5 22. a8=K) 13... a6 14. Rxe7 Nxe7 { Opening up the white bishop looks tempting... } 15. Kd3 { That's the move. The idea is that white wants to avoid a situation where the bishop takes on a6 and then black takes back with the knight, making it difficult for white to get rid of the a pawn. } 15... f6 16. Kc3 { Yes! That's the right move no matter what black plays: f6, f5, any knight move (except if he moves the knight on b8, which would be an immediate win for white with Rh8), Ra7, or a5. Any move black makes, just open up that bishop. } 16... f5 17. Bxa6 Nxa6 18. Kb4 Nxb4 19. a3 Rxa3 20. Ra1 Rxa1# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: find the win"]
+[Date "2025.11.25"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/H1yoG0uP"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn4nr/ppp1ppQp/8/8/8/8/q3NP1P/R1B1KB1R w - - 0 8"]
+[SetUp "1"]
+[UTCDate "2025.11.25"]
+[UTCTime "03:09:21"]
+[ChapterMode "gamebook"]
+
+{ Taking the queen doesn't look too bad, and maybe it's not (it does lead to an eventual win). The better choice is Qxf7. }
+8. Qxf7 { If black takes the rook, white plays Qxg8 and picks up tempo. If black takes the queen, white plays Rxa7, and same thing. Black has to play Qxe2. } 8... Qxe2 { This one looks scary. Think about it for a minute. } 9. Kxe2 { Yes! Now it's all but over. } 9... a6 10. Rxa6 Nxa6 11. Qxg8 Raxg8 12. Bg5 Rxg5 13. Rg1 Rxg1 14. Bg2 Rxg2 15. Kd2 Rxf2 16. Kd1 Rxh2 17. Kd2 Rxd2# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxd2 (6. Qxe8 Qxc1 variation)"]
+[Date "2025.11.25"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxd2 (6. Qxe8 Qxc1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/RoXcm5K0"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/ppp1pppp/8/8/8/8/PP1qNP1P/RNB1KB1R b - - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.11.25"]
+[UTCTime "22:09:57"]
+[ChapterMode "gamebook"]
+
+6... Qxc1 { This is the second option for black from left to right. Instead of playing Qxb2, this time black plays Qxc1. This is actually black's best move, mate in 24 for white. The cool thing about this one is that white gets to end the queen race immediately. } { [%cal Ge2c1] } 7. Nxc1 { The most common move for black here is b5, but we know that's not right. Check the next chapter for a quiz where black plays b5 and see if you can solve it. Keep in mind: black almost never plays the ideal line. This chapter covers the most difficult way for white to win--it'll typically be a lot easier. } { [%csl Gb7] } 7... Nd7 { Nd7 is black's strongest move here. Tempting to sack the queen right away so you can get rid of that bishop...but not so fast. If you can remember white's next move, you got this every time! } 8. Qxf7 { Correct! Black is prevented from playing b5 and bringing out the bishop because if white plays Qxg7, then black's dark square bishop is coming out to gobble some pieces for an easy white win. } 8... g6 { From here on, it's basically an engine proof. I would never be able to remember this line, but like I said earlier, it's unlikely you'll find yourself in this situation. Focus on the easier wins, because they occur with much greater frequency. } 9. Qxe7 Nxe7 10. Bd3 Rg8 11. Bxg6 hxg6 12. f4 c5 13. Kf2 Nc8 14. Ke3 Ne5 15. fxe5 c4 16. a3 Bxa3 17. Rxa3 Nd6 18. Rxa7 Rxa7 19. exd6 Ra2 20. Nxa2 c3 21. bxc3 Rb8 22. Nb4 Rg8 23. Kf4 g5 24. Kxg5 Rxg5 25. Nd5 Rxd5 26. h3 Rxd6 27. Nd2 Rxd2 28. Rh2 Rxh2 29. h4 Rxh4 30. c4 Rxc4# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.25"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/2Cy7xiCK"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/p1p1pppp/8/1p6/8/8/PP3P1P/RNN1KB1R w - - 0 7"]
+[SetUp "1"]
+[UTCDate "2025.11.25"]
+[UTCTime "22:15:58"]
+
+{ Easy start, tough finish }
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxd2 (6. Qxe8 Qxe1 variation)"]
+[Date "2025.11.26"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxd2 (6. Qxe8 Qxe1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/M0qbsXwf"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/ppp1pppp/8/8/8/8/PP1qNP1P/RNB1KB1R b - - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.11.26"]
+[UTCTime "02:14:04"]
+[ChapterMode "gamebook"]
+
+{ This time, black plays Qxe1. This is the most commonly played move, and black's idea is just to keep the queen race going until he finds an opportunity. } { [%cal Gd2e1] }
+6... Qxe1 7. Qxf7 { Heading to the safe space. It's a win in 21 for white. Things might look dangerous for white, but you're good. The most common move by far for black, Qxf2, is a loss in 10. See if you can figure it out in the next chapter's quiz. Qxf1 is also a quick win, thought a tiny bit harder to find. I'll make that a quiz as well. Black's only hope is Qxe2! } { [%cal Ge1e2] } 7... Qxe2 8. Bxe2 { We've been here before: both bishops looking dangerous, but with our queen in black's territory we are still in control. } 8... b5 9. Bxb5 Nd7 10. Bxd7 { Black's best move is e6. It doesn't look so great, and that's because it's not. } { [%cal Ge7e6] } 10... e6 11. Bxe6 Rd8 12. Qxg7 Bxg7 13. Bxg8 Bxb2 14. Bxb2 Rdxg8 15. Bxh8 Rxh8 16. Rd1 Rd8 17. Rxd8 { This cleanup shouldn't be too difficult. } 17... a5 18. Nd2 c5 19. Rd4 cxd4 20. a4 d3 21. Re1 h5 22. Re2 dxe2 23. h4 e1=B 24. Nf1 Bxf2 25. Ng3 Bxg3# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.26"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/ZRmoFzsh"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/ppp1pQpp/8/8/8/8/PP2Nq1P/RNB2B1R w - - 0 7"]
+[SetUp "1"]
+[UTCDate "2025.11.26"]
+[UTCTime "02:22:08"]
+
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.26"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/IG15mPEs"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/ppp1pQpp/8/8/8/8/PP2NP1P/RNB2q1R w - - 0 7"]
+[SetUp "1"]
+[UTCDate "2025.11.26"]
+[UTCTime "02:22:46"]
+
+{ This one's a little harder than the last one, but not too bad. }
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: ***5. Nxe2 Qxd2 (6. Qxe8 Qxe2 variation)"]
+[Date "2025.11.26"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "***5. Nxe2 Qxd2 (6. Qxe8 Qxe2 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/K9Uuihe0"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2Qbnr/ppp1pppp/8/8/8/8/PP1qNP1P/RNB1KB1R b - - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.11.26"]
+[UTCTime "02:33:43"]
+[ChapterMode "gamebook"]
+
+{ Finally, our last possibility for black after 5...Qxd2. This time, it's Qxe2. } { [%cal Gd2e2] }
+6... Qxe2 7. Qxf7 { Yep, safe space again. } *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxh1 (8...Nxe7 variation)"]
+[Date "2025.11.24"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxh1 (8...Nxe7 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/kfaTsegA"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/3q4/Q7/8/PP1PNP1P/RNB1KB1R b - - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.11.24"]
+[UTCTime "00:39:12"]
+[ChapterMode "gamebook"]
+
+5... Qxh1 { So...this is a win in 38 for white. That's not great news for learning this line. :) But don't worry, it won't be as bad as you think. Black's chances become very limited very quickly. We start normally, with Qxe8. } { [%cal Ga4e8] } 6. Qxe8 Qxf1 { Whether the black queen takes on f1 or h2, white will play the same move: go to your safe space. } 7. Qxf7 Qxe1 8. Qxe7 { Right! This is a tough one to find, but now white almost certainly has a quick win locked up. The ONE move black can play that leads to mate in 27 (instead of 10) is the extremely rare Nxe7, capturing white's queen. But almost no one ever does that because it looks like suicide. Provided black takes with the queen instead, the win is actually pretty easy for white. We will look at that scenario in the next chapter. } 8... Nxe7 9. d4 { Did you find that one? Not easy! } 9... Qxc1 10. Nxc1 c5 11. dxc5 b6 12. cxb6 axb6 13. b4 { Getting that pawn out in front of the bishop will payoff big time later on in the game. } 13... Rxa2 14. Nxa2 { At this point, it's really tough to know what to do. Black's best move is b5. However, he could play a lot of different things here that lead to a difficult endgame. It's a win in 20, but it won't be easy. } 14... b5 15. Nd2 Nd7 16. Nc1 Nb6 17. Rb1 Nc4 18. Nxc4 bxc4 19. Ra1 { b2 also works. Like I said, this is a difficult line. Remember, no one ever plays it. Look at the barely covered bishop on f8 that's pointed at white's unprotected pawn. Exploit it! } 19... h5 20. Ra2 g5 21. f4 gxf4 22. Rd2 { Now you got it. } 22... Nd5 23. Rxd5 Bxb4 24. Rxh5 Rxh5 25. h3 Rxh3 26. Nd3 Rxd3# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxh1 (8...Qxe2 variation)"]
+[Date "2025.11.24"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxh1 (8...Qxe2 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/beQ9ACvX"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/ppp1Q1pp/8/8/8/8/PP1PNP1P/RNB1q3 b - - 0 8"]
+[SetUp "1"]
+[UTCDate "2025.11.24"]
+[UTCTime "21:50:08"]
+[ChapterMode "gamebook"]
+
+{ Just like in the previous chapter, white plays Qxe7. Assuming black doesn't play Nxe7, he's going to take one of white's pieces with the queen. In ALL cases, white plays Qxg7. The idea is to open up his rook, which is pointed at the unprotected h pawn. Let's see what happens if black plays Qxe2. }
+8... Qxe2 9. Qxg7 Qxf2 10. Qxh7 { Now you see it? Look at that wide open bishop on f8! That's gonna be a problem for black. What if black takes h2? Take back with the queen and bring down the rook. What if black takes on d2? Take back with the knight and bring down the rook. } 10... Qxd2 11. Nxd2 Rxh7 12. Ne4 Rxh2 13. Nf2 Rxf2 14. Bd2 Rxd2 15. a4 Rxb2 16. Ra2 Rxa2 17. a5 Rxa5# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: 5. Nxe2 Qxh1 (8...Qxc1 variation)"]
+[Date "2025.11.24"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "5. Nxe2 Qxh1 (8...Qxc1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/UwsKzEZG"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/ppp1Q1pp/8/8/8/8/PP1PNP1P/RNB1q3 b - - 0 8"]
+[SetUp "1"]
+[UTCDate "2025.11.24"]
+[UTCTime "22:15:11"]
+[ChapterMode "gamebook"]
+
+{ The only difference from the previous chapter is that here black plays Qxc1 instead of Qxe2. If black plays either of the other two possible moves (Qxd2 or Qxf2), it's the same as the previous chapter. White will play Qxg7, leaving the bishop wide open and preparing to release black's h-rook. }
+8... Qxc1 9. Qxg7 { Now you can see the difference that Qxc1 made: black has more possibilities for continuing the queen race than he had with the other moves. Don't worry, he won't get away with it! Let's play with black continuing the queen race as long as possible. } 9... Qxb2 10. Qxh7 { That's right--open up that rook! Wait...what if black plays Qxb1 or Qxa2, opening white's rook? Just take the queen. Black will lose the rook vs. rook race every time. } 10... Qxa1 11. Qxc7 Qxa2 { This is a crucial point because black can take the knight on b1 and there's nothing left in its path after that. Either of white's moves works, but I think Qxb8 is easier to calculate. } 12. Qxb8 Qxd2 13. Nxd2 Rxh2 14. Qxa8 Rxf2 15. Qxf8 { What if black takes the white queen? Doesn't matter at this point. } 15... Rxe2 16. Qxg8 Rxd2 17. Qd8 Rxd8# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.24"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/xTHML8MS"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/ppp4Q/8/8/8/8/P2PNP1P/qN6 w - - 0 10"]
+[SetUp "1"]
+[UTCDate "2025.11.24"]
+[UTCTime "22:28:42"]
+
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Black Deviation #1 4. Qa4 Qxh1 5. Qxa7 Bxe2"]
+[Date "2025.11.22"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Black Deviation #1 4. Qa4 Qxh1 5. Qxa7 Bxe2"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/laEHOo1P"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/8/Q5b1/8/PP1PPP1P/RNB1KBNq w - - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.11.22"]
+[UTCTime "15:10:08"]
+[ChapterMode "gamebook"]
+
+{ Okay, big difference here that deviates from the standard opening line we've played so far. Black has not played Bxe2, but has instead chosen to take h1 with the queen. Black won't do that with his other queen options (Qxa2 & Qxd2) because they lead to quick losses. Playing 4...Qxh1 happens in a paltry 3% of games. Remember, in 86% of games, black is going to take with the bishop before committing to a direction for his queen. We will look at all of these possibilities, though, in the interest of being complete. }
+5. Qxa7 { It's a win in 14. The most popular next move is for black to finally take with the bishop. In which case, white should play Bxe2! That veers away from our standard opening where we'd normally take with the knight. Just remember: if the black bishop is still in the middle of the board, you're in a "special situation." Thing'll be a bit different. } { [%cal Gg4e2] } 5... Bxe2 { Taking with the bishop is the most commonly played move, so we'll look at that first. Black's other two options, Qxh2 and Qxg1, are covered in Chapter 14 (just after the next quiz). } 6. Bxe2 { You take with the bishop--this ONLY applies in games where black plays 5...Qxh1 (normally you take with the knight). It is very highly probable black will play Qxh2 or Qxg1 here. If black unexpectedly decides to play Rxa7, it's a whole different line for white, which really complicates everything (see next chapter). Let's examine the probable next move. } 6... Qxg1 7. Qxb7 { From here on out, you're just playing keep away. Capture black's queen if he plays Qxf2, then you have black rook vs. white queen in a race. } { [%cal Gb7c7] } 7... Qxe1 (7... Qxh2 8. Qxc7) 8. Qxc7 { Look at black's 4 possible moves. For 3 of them, white can't immediately recapture (disregarding white capturing with 9. Qxc1, which would clearly be disadvantageous). Only Qxd2 allows white to immediately capture black's queen and get in a race with the rook. If black gives you that opportunity, take it. Otherwise, keep playing keep away. } 8... Qxc1 { It is safe to move into a spot where the white queen can be captured because if that happens, white cannot immediately capture black's queen and it is forced to move again while the black rook remains open. } { [%cal Gc7b8] } 9. Qxb8 { If black lets you take the queen on the next move, take it. You can calculate the win easily after that. Let's turn it into a quiz (see next chapter). For now, let's deal with black continuing the queen race with Qxb2. What should you do? Keep away! } 9... Qxb2 10. Qxa8 Qxd2 11. Qxe8 { That's right--play keep away until the end. White will win this! } 11... Qxe2 12. Qxf8 { Qxf7 works too. } (12. Qxe7 Nxe7) 12... Qxf2 13. Qxg7 { There are other ways to win, even if white gives up the queen. But keep it simple--just play keep away and you'll win. No need to look for alternatives. } (13. Qxg8 Qxh2 14. Qxg7 Qxa2 15. Qxf7 Qxa1 16. Qxe7 Qxb1 17. Qxh7 Qxh7#) 13... Qxh2 14. Qxh8 Qxa2 15. Qxh7 Qxb1 16. Qxf7 Qxa1 17. Qxe7 Nxe7# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.23"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/pv4zYX5l"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rQ2kbnr/4pppp/8/8/8/8/PP1qBP1P/RN6 w - - 0 9"]
+[SetUp "1"]
+[UTCDate "2025.11.23"]
+[UTCTime "22:36:58"]
+
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: *** Black deviation #2 4. Qa4 Qxh1 (5. Qa7 Qxg1 variation)"]
+[Date "2025.11.23"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "*** Black deviation #2 4. Qa4 Qxh1 (5. Qa7 Qxg1 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/qZoCMHUQ"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/8/Q5b1/8/PP1PPP1P/RNB1KBNq w - - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.11.23"]
+[UTCTime "02:39:00"]
+[ChapterMode "gamebook"]
+
+{ This time, we'll look at what happens if white plays Qxa7 and black answers with Qxg1 (or Qxh2, which will turn out the same from whit's perspective). Black's idea is to extend the queen race--basically, he's trying to make things complicated for white until he can find an opportunity. } { [%cal Gh1g1,Ga4a7] }
+5. Qxa7 Qxg1 *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Black deviation #3 5. Ne2 Qxh1 (6. Qxa7 Rxa7 variation)"]
+[Date "2025.11.23"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Black deviation #3 5. Ne2 Qxh1 (6. Qxa7 Rxa7 variation)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/RBiwVJ1a"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/Qpp1pppp/8/8/8/8/PP1PBP1P/RNB1K1Nq b - - 0 6"]
+[SetUp "1"]
+[UTCDate "2025.11.23"]
+[UTCTime "22:45:06"]
+[ChapterMode "gamebook"]
+
+{ Black playing Rxa7 is quite uncommon, but it introduces a line that prevents us from playing our "keep away" strategy. It's actually pretty difficult to remember because white has to make a counterintuitive move immediately after its queen is captured. However, what you can remember is that you are essentially doing cleanup. Black has lost, and you can lead his loose queen and rook through all white's pieces if you're careful. } { [%cal Ga8a7] }
+6... Rxa7 7. b4 { That's it! The counterintuitive move is to play b4 here. } 7... Qxg1 8. f4 { Yes. This is to avoid having to capture the queen on f2 with the king--you're just keeping that queen gobbling up pieces. } 8... Qxe1 9. Ba3 { Great! If black takes the knight, take the queen with white's rook. If black takes the bishop with his rook, take back with the knight and then the black queen can't take anything that results in its immediate capture. And cleanup is pretty easy after this. Easy enough to...make into a quiz! See next chapter. } 9... Qxe2 *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.23"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/q0ov3a4T"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "1n2kbnr/rpp1pppp/8/8/1P3P2/B7/P2PB2P/RN2q3 b - - 1 9"]
+[SetUp "1"]
+[UTCDate "2025.11.23"]
+[UTCTime "22:53:12"]
+
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: When black blunders early: Part 1 (4...Qxa2)"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "When black blunders early: Part 1 (4...Qxa2)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/wxlNyMjY"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/3q4/Q5b1/8/PP1PPP1P/RNB1KBNR b - - 1 4"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "22:02:59"]
+[ChapterMode "gamebook"]
+
+{ Here, we return to what happens if black veers away from the standard opening and fails to play Bxe2. Instead, black will play a queen move: Qxa2, Qxd2, or Qxh1. Let's move left to right and begin with Qxa2 }
+4... Qxa2 5. Qxa2 { That's the one! Rxa2 also works, but (to me anyway) the picture of what to do next is clearer when you play Qxa2. Now black only has one choice. } (5. Qxe8 { Nope, this blows the win for white. Aaaaaand it's the most commonly played move at 66%! }) 5... Bxe2 6. Qxa7 { Now, what happens if black plays Rxa7? White takes the bishop on e2 (doesn't even matter which piece white uses!) and black suddenly has a loose rook pointed at the back row. Not good for black. Black is going to want to play Bxf8 and hope to get lucky. } 6... Bxf1 7. Qxb7 { Great! That bishop on f1 isn't going anywhere, so black now has to bring the rook down. } 7... Rxa1 8. Qxb8 { Why not take the bishop to simplify things? You could do that, but I think it leads to a slightly more difficult cleanup. This will already be difficult enough. In this position, white can use the strategy of "just don't move into a place where black can take the queen--EVER" and it works. If you take the bishop there will be some exchange variations you need to think about. } 8... Rxb1 9. Qxe8 Rxb2 { If black moves along the back rank and takes c1 instead, things are over quickly. The next chapter is a quiz where you can find that easy win. It's harder to play when black takes on b2, but just follow the advice: don't let him take your queen! } 10. Qxf8 { Qxf7 works too. } (10. Qxf7 { This works, but we're playing Qxf8 here }) 10... Rxd2 { No choices for black. } 11. Qxf7 Rxf2 { No choices for black. } 12. Qxg7 Rxh2 { No choices for black. } 13. Qxh8 Rxh1 { No choices for black. } 14. Kxf1 { Great! That's the one little tricky part. Remember, up until now, black has had no choice but to move in a straight line through your pieces. All you had to do was keep away. Now there are several ways to win. You can count it out. } 14... Rxg1 15. Qxh7 Rxf1 16. Qxg8 Rxc1 17. Qg1 Rxg1# *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/EozVWftv"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "5bnr/2p1pQpp/8/8/8/8/1P1P1P1P/4rbNR w - - 0 11"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "22:24:44"]
+
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win (the whole line)"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win (the whole line)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/W6rl0zYD"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/8/Q5b1/8/qP1PPP1P/RNB1KBNR w - - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "22:34:18"]
+
+ *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: When black blunders early: Part 2 (4...Qxd2)"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "When black blunders early: Part 2 (4...Qxd2)"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/EzxrhcES"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn2kbnr/ppp1pppp/8/8/Q5b1/8/PP1qPP1P/RNB1KBNR w - - 0 5"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "22:37:13"]
+[ChapterMode "gamebook"]
+
+{ This time, black forgot to take with the bishop again and played Qxd2. Lucky for white, this one is easy. How can you punish that bishop? }
+5. Kxd2 { Right! Now look where the bishop is headed...stuck on f1. All white has to do is delay black taking the queen. } 5... Bxe2 6. Qxe8 Bxf1 { White's next move is tricky, but once you see how powerful it is you won't forget it! } 7. Qxf7 { That's right! There's not a win if you dump the queen right away. That's just something you'll have to remember. Don't worry, black can't do anything with the bishop. The remaining line is the next quiz. Find the win. Mess around with the black bishop and you'll see what I mean--no productive moves. } *
+
+
+[Event "Let's Learn the Wizard Opening - antichess: Quiz: Find the win"]
+[Date "2025.11.21"]
+[Result "*"]
+[Variant "Antichess"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Let's Learn the Wizard Opening - antichess"]
+[ChapterName "Quiz: Find the win"]
+[ChapterURL "https://lichess.org/study/f3NuTHGo/uoVlfKUh"]
+[Annotator "https://lichess.org/@/Dy1ar"]
+[FEN "rn3bnr/ppp1pQpp/8/8/8/8/PP1K1P1P/RNB2bNR b - - 0 7"]
+[SetUp "1"]
+[UTCDate "2025.11.21"]
+[UTCTime "22:42:56"]
+
+7... Bh3 (7... Bd3) *
+
+

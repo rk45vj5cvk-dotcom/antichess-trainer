@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { setAudioModeAsync, useAudioPlayer } from 'expo-audio';
 import { completedStudy } from './src/completedStudy';
 import { modernDefenseStudy } from './src/modernDefenseStudy';
+import { wizardStudy } from './src/wizardStudy';
 import {
   SafeAreaView, ScrollView, View, Text, Pressable, useWindowDimensions,
   TextInput, StyleSheet,
@@ -22,7 +23,7 @@ type Line = {
   sans: string[];
   comments: string[][];
 };
-type Course = { title: string; lines: Line[] };
+type Course = { title: string; lines: Line[]; trainingColor?: 'white' | 'black' };
 
 const study = completedStudy;
 
@@ -115,6 +116,7 @@ function readCourse(text: string): Course {
 
 const initialCourse = readCourse(study);
 const modernDefenseCourse = { ...readCourse(modernDefenseStudy), title: 'Modern Defense' };
+const wizardCourse: Course = { ...readCourse(wizardStudy), trainingColor: 'white' };
 const symbols = {
   white: { king: '♔', queen: '♕', rook: '♖', bishop: '♗', knight: '♘', pawn: '♙' },
   black: { king: '♚', queen: '♛', rook: '♜', bishop: '♝', knight: '♞', pawn: '♟' },
@@ -549,7 +551,7 @@ export default function App() {
       console.warn('Audio setup unavailable:', error);
     });
   }, []);
-  const [courses, setCourses] = useState([initialCourse, modernDefenseCourse]);
+  const [courses, setCourses] = useState<Course[]>([initialCourse, modernDefenseCourse, wizardCourse]);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [active, setActive] = useState<number>();
   const [chapter, setChapter] = useState<number>();
@@ -604,11 +606,14 @@ export default function App() {
         {courses.map((item, i) =>
           <Button key={i}
             title={`${item.title} · ${item.lines.length} chapters`}
-            onPress={() => { setActive(i); setChapter(0); }} />)}
+            onPress={() => {
+              if (item.trainingColor) setColor(item.trainingColor);
+              setActive(i); setChapter(0);
+            }} />)}
         <Text style={s.heading}>Import another study</Text>
         <Text style={s.text}>
           Paste an Antichess PGN. Extra imports last until the app reloads.
-          Your Suicide Defense study is included automatically.
+          Suicide Defense, Modern Defense, and Wizard Opening are included automatically.
         </Text>
         <TextInput
           accessibilityLabel="PGN text"
