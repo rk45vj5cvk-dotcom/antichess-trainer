@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useAudioPlayer } from 'expo-audio';
+import { setAudioModeAsync, useAudioPlayer } from 'expo-audio';
 import { completedStudy } from './src/completedStudy';
+import { modernDefenseStudy } from './src/modernDefenseStudy';
 import {
   SafeAreaView, ScrollView, View, Text, Pressable, useWindowDimensions,
   TextInput, StyleSheet,
@@ -113,6 +114,7 @@ function readCourse(text: string): Course {
 }
 
 const initialCourse = readCourse(study);
+const modernDefenseCourse = { ...readCourse(modernDefenseStudy), title: 'Modern Defense' };
 const symbols = {
   white: { king: '♔', queen: '♕', rook: '♖', bishop: '♗', knight: '♘', pawn: '♙' },
   black: { king: '♚', queen: '♛', rook: '♜', bishop: '♝', knight: '♞', pawn: '♟' },
@@ -150,8 +152,10 @@ function Board({
   const [selected, setSelected] = useState<number>();
   const [promotionTo, setPromotionTo] = useState<number>();
   const [message, setMessage] = useState('');
-  const knockA = useAudioPlayer(require('./assets/wood-knock.wav'));
-  const knockB = useAudioPlayer(require('./assets/wood-knock.wav'));
+  const moveA = useAudioPlayer(require('./assets/Move.wav'));
+  const moveB = useAudioPlayer(require('./assets/Move.wav'));
+  const captureA = useAudioPlayer(require('./assets/capture.wav'));
+  const captureB = useAudioPlayer(require('./assets/capture.wav'));
   const previousPly = useRef(ply);
   const nextSound = useRef(0);
   const replyTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -176,11 +180,22 @@ function Board({
     previousPly.current = ply;
     if (!advanced || !soundEnabled) return;
 
+    // Inspect the position before the last move, including en passant captures.
+    const before = position(line.fen);
+    for (const uci of line.moves.slice(0, ply - 1)) before.play(parseUci(uci)!);
+    const move = parseUci(line.moves[ply - 1])!;
+    const capture = 'from' in move && (
+      before.board.has(move.to) ||
+      (before.board.get(move.from)?.role === 'pawn' && before.epSquare === move.to)
+    );
     // Alternate players so a reply cannot cut off your move sound.
-    const player = nextSound.current++ % 2 === 0 ? knockA : knockB;
+    const alternate = nextSound.current++ % 2 === 0;
+    const player = capture
+      ? (alternate ? captureA : captureB)
+      : (alternate ? moveA : moveB);
     let cancelled = false;
 
-    async function playKnock() {
+    async function playSound() {
       try {
         await player.seekTo(0);
         if (!cancelled) player.play();
@@ -188,9 +203,9 @@ function Board({
         console.warn('Move sound unavailable:', error);
       }
     }
-    void playKnock();
+    void playSound();
     return () => { cancelled = true; };
-  }, [ply, soundEnabled, knockA, knockB]);
+  }, [ply, soundEnabled, line, moveA, moveB, captureA, captureB]);
 
   const [commentFrom, setCommentFrom] = useState(0);
 
@@ -505,7 +520,12 @@ function Board({
 }
 
 export default function App() {
-  const [courses, setCourses] = useState([initialCourse]);
+  useEffect(() => {
+    void setAudioModeAsync({ playsInSilentMode: true }).catch(error => {
+      console.warn('Audio setup unavailable:', error);
+    });
+  }, []);
+  const [courses, setCourses] = useState([initialCourse, modernDefenseCourse]);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [active, setActive] = useState<number>();
   const [chapter, setChapter] = useState<number>();
