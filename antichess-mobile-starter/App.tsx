@@ -122,9 +122,20 @@ const symbols = {
   black: { king: '♚', queen: '♛', rook: '♜', bishop: '♝', knight: '♞', pawn: '♟' },
 };
 
-function Button({ title, onPress }: { title: string; onPress: () => void }) {
+function openingMoves(course: Course) {
+  return course.lines[0]?.sans.slice(0, 2).join(' ') || '';
+}
+
+function Button({ title, subtitle, onPress }: {
+  title: string;
+  subtitle?: string;
+  onPress: () => void;
+}) {
   return <Pressable style={s.button} onPress={onPress}>
     <Text style={s.text}>{title}</Text>
+    {!!subtitle && <Text style={{
+      color: '#a9bcc7', fontSize: 13, lineHeight: 19, marginTop: 4,
+    }}>{subtitle}</Text>}
   </Pressable>;
 }
 
@@ -662,6 +673,7 @@ export default function App() {
         {courses.map((item, i) =>
           <Button key={i}
             title={`${item.title} · ${item.lines.length} chapters`}
+            subtitle={openingMoves(item)}
             onPress={() => {
               if (item.trainingColor) setColor(item.trainingColor);
               setActive(i); setChapter(0);
@@ -683,6 +695,7 @@ export default function App() {
         <Button title="Home"
           onPress={() => { setChapter(undefined); setActive(undefined); }} />
         <Text style={s.heading}>{course.title}</Text>
+        <Text style={{ color: '#a9bcc7', fontSize: 13 }}>{openingMoves(course)}</Text>
         {chapter === undefined ? <>
           <Button title={`Train as ${color} — tap to switch`}
             onPress={() => setColor(color === 'white' ? 'black' : 'white')} />
