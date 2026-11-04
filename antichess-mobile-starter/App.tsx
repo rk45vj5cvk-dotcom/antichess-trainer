@@ -357,9 +357,15 @@ function Board({
       <Text style={{ color: '#aaaaaa', fontSize: 12 }}>
         {chapterIndex + 1}/{chapterCount}
       </Text>
-      <Pressable accessibilityLabel="Close training" onPress={onClose}
-        hitSlop={10}>
-        <Text style={{ color: '#aaaaaa', fontSize: 24 }}>×</Text>
+      <Pressable accessibilityRole="button"
+        accessibilityLabel="Home — training module selection"
+        onPress={onClose}
+        style={{
+          minHeight: 44, paddingHorizontal: 10, justifyContent: 'center',
+        }}>
+        <Text style={{ color: '#eeeeee', fontSize: 15, fontWeight: '600' }}>
+          Home
+        </Text>
       </Pressable>
     </View>
 
@@ -674,9 +680,8 @@ export default function App() {
         <Button title="Import course" onPress={importStudy} />
         {!!error && <Text accessibilityLiveRegion="polite" style={s.comment}>{error}</Text>}
       </> : <>
-        <Button title={chapter === undefined ? '← All courses' : '← Chapters'}
-          onPress={() => chapter === undefined
-            ? setActive(undefined) : setChapter(undefined)} />
+        <Button title="Home"
+          onPress={() => { setChapter(undefined); setActive(undefined); }} />
         <Text style={s.heading}>{course.title}</Text>
         {chapter === undefined ? <>
           <Button title={`Train as ${color} — tap to switch`}
