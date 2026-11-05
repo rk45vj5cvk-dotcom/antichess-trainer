@@ -41,11 +41,14 @@ const comments=(c,i)=>{
  return '';
 };
 const brace=s=>'{ '+s+' }';
-const pgn=chapters.map(c=>[
+const pgn=chapters.map((c,index)=>[
  '[Event "Polish Defense — Introduction"]','[StudyName "Polish Defense — Introduction"]',
  `[ChapterName "${c.title}"]`,'[Variant "Antichess"]','[Result "*"]',
- '[Source "https://catalin.francu.com/nilatac/"]','[Annotator "Adapted from Cătălin Frâncu / Nilatac by Antichess Trainer"]',
- '[License "CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/"]','',
+ ...(index===0?[
+  '[Source "https://catalin.francu.com/nilatac/"]',
+  '[Annotator "Adapted from Cătălin Frâncu / Nilatac by Antichess Trainer"]',
+  '[License "CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/"]',
+ ]:[]),'',
  brace(intro),
  c.moves.map((san,i)=>{
   let note=comments(c,i);

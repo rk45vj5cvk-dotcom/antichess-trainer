@@ -57,8 +57,8 @@ The source snapshot and adapted module data (polish-training.pgn and
 src/polishStudy.ts) are provided under CC BY-SA 3.0. Changes: selected five White
 branches and top-ranked replies, added original teaching commentary, split
 sequences into introductory checkpoints, and stopped after supported Black
-moves. Attribution and the license link are visible in the app's lesson comment
-box. The license applies to this module data; the engine source is not copied
+moves. Attribution and the license link appear only in the first chapter’s comment
+box; PGN attribution headers are also included only in the first chapter. The license applies to this module data; the engine source is not copied
 into the app.
 
 Rebuild and validate all saved move selections with:

@@ -442,7 +442,7 @@ function Board({
         accessibilityLabel="Study commentary"
         showsVerticalScrollIndicator
       >
-        {attribution && <SourceCredit credit={attribution} />}
+        {attribution && chapterIndex === 0 && <SourceCredit credit={attribution} />}
         {commentary.length ? commentary.map((comment, i) =>
           <Text key={i} style={{
             color: '#111111', fontSize: 18, lineHeight: 26,
