@@ -3,9 +3,10 @@ import { setAudioModeAsync, useAudioPlayer } from 'expo-audio';
 import { completedStudy } from './src/completedStudy';
 import { modernDefenseStudy } from './src/modernDefenseStudy';
 import { wizardStudy } from './src/wizardStudy';
+import { polishStudy } from './src/polishStudy';
 import {
   SafeAreaView, ScrollView, View, Text, Pressable, useWindowDimensions,
-  TextInput, StyleSheet,
+  TextInput, StyleSheet, Linking,
 } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import { pieceSvg } from './src/pieceSvg';
@@ -23,7 +24,13 @@ type Line = {
   sans: string[];
   comments: string[][];
 };
-type Course = { title: string; lines: Line[]; trainingColor?: 'white' | 'black' };
+type Attribution = { text: string; sourceUrl: string; licenseUrl: string };
+type Course = {
+  title: string;
+  lines: Line[];
+  trainingColor?: 'white' | 'black';
+  attribution?: Attribution;
+};
 
 const study = completedStudy;
 
@@ -117,6 +124,14 @@ function readCourse(text: string): Course {
 const initialCourse = readCourse(study);
 const modernDefenseCourse = { ...readCourse(modernDefenseStudy), title: 'Modern Defense' };
 const wizardCourse: Course = { ...readCourse(wizardStudy), trainingColor: 'white' };
+const polishCourse: Course = {
+  ...readCourse(polishStudy), trainingColor: 'black',
+  attribution: {
+    text: 'Adapted from Cătălin Frâncu’s Nilatac opening book',
+    sourceUrl: 'https://catalin.francu.com/nilatac/',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+  },
+};
 const symbols = {
   white: { king: '♔', queen: '♕', rook: '♖', bishop: '♗', knight: '♘', pawn: '♙' },
   black: { king: '♚', queen: '♛', rook: '♜', bishop: '♝', knight: '♞', pawn: '♟' },
@@ -139,9 +154,21 @@ function Button({ title, subtitle, onPress }: {
   </Pressable>;
 }
 
+function SourceCredit({ credit }: { credit: Attribution }) {
+  function open(url: string) {
+    void Linking.openURL(url).catch(error => console.warn('Could not open source:', error));
+  }
+  return <View style={{ gap: 4 }}>
+    <Text accessibilityRole="link" onPress={() => open(credit.sourceUrl)}
+      style={{ color: '#52768a', fontSize: 12 }}>{credit.text}</Text>
+    <Text accessibilityRole="link" onPress={() => open(credit.licenseUrl)}
+      style={{ color: '#52768a', fontSize: 12 }}>Module licensed CC BY-SA 3.0</Text>
+  </View>;
+}
+
 function Board({
   line, color, title, chapterIndex, chapterCount,
-  onClose, onPreviousChapter, onNextChapter, soundEnabled, onToggleSound,
+  onClose, onPreviousChapter, onNextChapter, soundEnabled, onToggleSound, attribution,
 }: {
   line: Line;
   color: 'white' | 'black';
@@ -153,6 +180,7 @@ function Board({
   onClose: () => void;
   onPreviousChapter: () => void;
   onNextChapter: () => void;
+  attribution?: Attribution;
 }) {
   const { width, height } = useWindowDimensions();
   const [availableHeight, setAvailableHeight] = useState(height - 90);
@@ -176,6 +204,14 @@ function Board({
   const previousPly = useRef(ply);
   const nextSound = useRef(0);
   const replyTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  useEffect(() => {
+    // Keep the initial board visible briefly, then supply White's first move
+    // when the learner is Black. Also handles restarting in Learn mode.
+    if (ply !== 0 || !line.moves.length || position(line.fen).turn === color) return;
+    const timer = setTimeout(() => setPly(1), 280);
+    return () => clearTimeout(timer);
+  }, [ply, color, line]);
 
   useEffect(() => {
     const justCompleted = complete && !wasComplete.current;
@@ -406,6 +442,7 @@ function Board({
         accessibilityLabel="Study commentary"
         showsVerticalScrollIndicator
       >
+        {attribution && <SourceCredit credit={attribution} />}
         {commentary.length ? commentary.map((comment, i) =>
           <Text key={i} style={{
             color: '#111111', fontSize: 18, lineHeight: 26,
@@ -618,7 +655,7 @@ export default function App() {
       console.warn('Audio setup unavailable:', error);
     });
   }, []);
-  const [courses, setCourses] = useState<Course[]>([initialCourse, modernDefenseCourse, wizardCourse]);
+  const [courses, setCourses] = useState<Course[]>([initialCourse, modernDefenseCourse, wizardCourse, polishCourse]);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [active, setActive] = useState<number>();
   const [chapter, setChapter] = useState<number>();
@@ -650,6 +687,7 @@ export default function App() {
         chapterIndex={chapter}
         chapterCount={course.lines.length}
         soundEnabled={soundEnabled}
+        attribution={course.attribution}
         onToggleSound={() => setSoundEnabled(value => !value)}
         onClose={() => { setChapter(undefined); setActive(undefined); }}
         onPreviousChapter={() => setChapter(Math.max(0, chapter - 1))}
@@ -675,13 +713,13 @@ export default function App() {
             title={`${item.title} · ${item.lines.length} chapters`}
             subtitle={openingMoves(item)}
             onPress={() => {
-              if (item.trainingColor) setColor(item.trainingColor);
+              setColor(item.trainingColor ?? 'white');
               setActive(i); setChapter(0);
             }} />)}
         <Text style={s.heading}>Import another study</Text>
         <Text style={s.text}>
           Paste an Antichess PGN. Extra imports last until the app reloads.
-          Suicide Defense, Modern Defense, and Wizard Opening are included automatically.
+          Suicide Defense, Modern Defense, Wizard Opening, and Polish Defense are included automatically.
         </Text>
         <TextInput
           accessibilityLabel="PGN text"

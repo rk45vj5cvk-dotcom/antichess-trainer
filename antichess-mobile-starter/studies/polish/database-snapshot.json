@@ -1,0 +1,4090 @@
+{
+  "source": "Nilatac opening book by Cătălin Frâncu",
+  "sourceUrl": "https://catalin.francu.com/nilatac/",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "retrieved": "2026-11-05",
+  "lines": [
+    {
+      "branch": "b4",
+      "moves": [
+        "e3",
+        "c5",
+        "Ba6",
+        "Nxa6",
+        "b4",
+        "cxb4",
+        "d3",
+        "b3",
+        "cxb3",
+        "Nc7",
+        "Qf3",
+        "b5"
+      ],
+      "decisions": [
+        {
+          "ply": 5,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "b4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+b4",
+            "rows": [
+              {
+                "move": "cxb4",
+                "score": "0.5181",
+                "proof": "46415",
+                "disproof": "8211",
+                "size": "10201"
+              },
+              {
+                "move": "Nxb4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "cxb4",
+            "score": "0.5181",
+            "proof": "46415",
+            "disproof": "8211",
+            "size": "10201"
+          }
+        },
+        {
+          "ply": 6,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "b4",
+              "cxb4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+b4+cxb4",
+            "rows": [
+              {
+                "move": "d3",
+                "score": "1.9299",
+                "proof": "8211",
+                "disproof": "26990",
+                "size": "7445"
+              },
+              {
+                "move": "Nh3",
+                "score": "0.8011",
+                "proof": "10395",
+                "disproof": "1876",
+                "size": "416"
+              },
+              {
+                "move": "g3",
+                "score": "0.6657",
+                "proof": "9122",
+                "disproof": "988",
+                "size": "367"
+              },
+              {
+                "move": "a3",
+                "score": "0.5987",
+                "proof": "9374",
+                "disproof": "685",
+                "size": "34"
+              },
+              {
+                "move": "a4",
+                "score": "0.5987",
+                "proof": "9374",
+                "disproof": "685",
+                "size": "34"
+              },
+              {
+                "move": "Kf1",
+                "score": "0.4804",
+                "proof": "9229",
+                "disproof": "820",
+                "size": "241"
+              },
+              {
+                "move": "h3",
+                "score": "0.4759",
+                "proof": "8907",
+                "disproof": "881",
+                "size": "225"
+              },
+              {
+                "move": "Ke2",
+                "score": "0.4243",
+                "proof": "8987",
+                "disproof": "685",
+                "size": "177"
+              },
+              {
+                "move": "Qh5",
+                "score": "0.4080",
+                "proof": "9066",
+                "disproof": "885",
+                "size": "46"
+              },
+              {
+                "move": "Ne2",
+                "score": "0.2633",
+                "proof": "8814",
+                "disproof": "724",
+                "size": "175"
+              },
+              {
+                "move": "e4",
+                "score": "0.2209",
+                "proof": "9196",
+                "disproof": "484",
+                "size": "26"
+              },
+              {
+                "move": "Qf3",
+                "score": "0.2175",
+                "proof": "8936",
+                "disproof": "3853",
+                "size": "529"
+              },
+              {
+                "move": "Qe2",
+                "score": "0.2165",
+                "proof": "8806",
+                "disproof": "541",
+                "size": "26"
+              },
+              {
+                "move": "Na3",
+                "score": "0.1898",
+                "proof": "9527",
+                "disproof": "461",
+                "size": "27"
+              },
+              {
+                "move": "Qg4",
+                "score": "0.1534",
+                "proof": "9588",
+                "disproof": "4388",
+                "size": "323"
+              },
+              {
+                "move": "f3",
+                "score": "0.1287",
+                "proof": "9804",
+                "disproof": "306",
+                "size": "23"
+              },
+              {
+                "move": "Nf3",
+                "score": "0.0637",
+                "proof": "9802",
+                "disproof": "330",
+                "size": "23"
+              },
+              {
+                "move": "h4",
+                "score": "0.0590",
+                "proof": "11152",
+                "disproof": "381",
+                "size": "26"
+              },
+              {
+                "move": "g4",
+                "score": "0.0364",
+                "proof": "10662",
+                "disproof": "206",
+                "size": "23"
+              },
+              {
+                "move": "Ba3",
+                "score": "0.0187",
+                "proof": "13124",
+                "disproof": "246",
+                "size": "2"
+              },
+              {
+                "move": "Bb2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nc3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "c3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "c4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "d4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              }
+            ]
+          },
+          "selected": {
+            "move": "d3",
+            "score": "1.9299",
+            "proof": "8211",
+            "disproof": "26990",
+            "size": "7445"
+          }
+        },
+        {
+          "ply": 7,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "b4",
+              "cxb4",
+              "d3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+b4+cxb4+d3",
+            "rows": [
+              {
+                "move": "b3",
+                "score": "0.5181",
+                "proof": "26990",
+                "disproof": "6394",
+                "size": "6471"
+              },
+              {
+                "move": "Qc7",
+                "score": "0.1542",
+                "proof": "27211",
+                "disproof": "1350",
+                "size": "517"
+              },
+              {
+                "move": "Qa5",
+                "score": "0.0346",
+                "proof": "27291",
+                "disproof": "233",
+                "size": "41"
+              },
+              {
+                "move": "Rb8",
+                "score": "0.0196",
+                "proof": "28054",
+                "disproof": "234",
+                "size": "222"
+              },
+              {
+                "move": "b6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "52"
+              },
+              {
+                "move": "Nh6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "41"
+              },
+              {
+                "move": "g5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "27"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "26"
+              },
+              {
+                "move": "f6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "25"
+              },
+              {
+                "move": "Nb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nc7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "e6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "g6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "h5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "h6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nc5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Qb6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "b3",
+            "score": "0.5181",
+            "proof": "26990",
+            "disproof": "6394",
+            "size": "6471"
+          }
+        },
+        {
+          "ply": 8,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "b4",
+              "cxb4",
+              "d3",
+              "b3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+b4+cxb4+d3+b3",
+            "rows": [
+              {
+                "move": "cxb3",
+                "score": "1.9299",
+                "proof": "6394",
+                "disproof": "26329",
+                "size": "6445"
+              },
+              {
+                "move": "axb3",
+                "score": "0.4684",
+                "proof": "6408",
+                "disproof": "661",
+                "size": "25"
+              }
+            ]
+          },
+          "selected": {
+            "move": "cxb3",
+            "score": "1.9299",
+            "proof": "6394",
+            "disproof": "26329",
+            "size": "6445"
+          }
+        },
+        {
+          "ply": 9,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "b4",
+              "cxb4",
+              "d3",
+              "b3",
+              "cxb3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+b4+cxb4+d3+b3+cxb3",
+            "rows": [
+              {
+                "move": "Nc7",
+                "score": "0.5181",
+                "proof": "28294",
+                "disproof": "1639",
+                "size": "890"
+              },
+              {
+                "move": "Qa5",
+                "score": "0.1816",
+                "proof": "26366",
+                "disproof": "1733",
+                "size": "238"
+              },
+              {
+                "move": "Nb8",
+                "score": "0.1201",
+                "proof": "26329",
+                "disproof": "2699",
+                "size": "5064"
+              },
+              {
+                "move": "b6",
+                "score": "0.0837",
+                "proof": "27738",
+                "disproof": "323",
+                "size": "230"
+              },
+              {
+                "move": "Nb4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Qc7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nc5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Qb6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Rb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Nc7",
+            "score": "0.5181",
+            "proof": "28294",
+            "disproof": "1639",
+            "size": "890"
+          }
+        },
+        {
+          "ply": 10,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "b4",
+              "cxb4",
+              "d3",
+              "b3",
+              "cxb3",
+              "Nc7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+b4+cxb4+d3+b3+cxb3+Nc7",
+            "rows": [
+              {
+                "move": "Qf3",
+                "score": "1.9299",
+                "proof": "1835",
+                "disproof": "1706",
+                "size": "24"
+              },
+              {
+                "move": "Ba3",
+                "score": "1.8967",
+                "proof": "2469",
+                "disproof": "1027",
+                "size": "22"
+              },
+              {
+                "move": "Qc2",
+                "score": "1.7915",
+                "proof": "3907",
+                "disproof": "1056",
+                "size": "23"
+              },
+              {
+                "move": "Qg4",
+                "score": "1.7719",
+                "proof": "2163",
+                "disproof": "1739",
+                "size": "26"
+              },
+              {
+                "move": "Bd2",
+                "score": "1.7065",
+                "proof": "3351",
+                "disproof": "1238",
+                "size": "50"
+              },
+              {
+                "move": "Nd2",
+                "score": "1.6102",
+                "proof": "2305",
+                "disproof": "1235",
+                "size": "22"
+              },
+              {
+                "move": "Ne2",
+                "score": "1.5027",
+                "proof": "4049",
+                "disproof": "980",
+                "size": "50"
+              },
+              {
+                "move": "Kf1",
+                "score": "1.4236",
+                "proof": "2556",
+                "disproof": "1098",
+                "size": "22"
+              },
+              {
+                "move": "a3",
+                "score": "1.4180",
+                "proof": "2810",
+                "disproof": "898",
+                "size": "22"
+              },
+              {
+                "move": "Kd2",
+                "score": "1.3613",
+                "proof": "2590",
+                "disproof": "1089",
+                "size": "22"
+              },
+              {
+                "move": "Nh3",
+                "score": "1.2433",
+                "proof": "2668",
+                "disproof": "1489",
+                "size": "81"
+              },
+              {
+                "move": "g3",
+                "score": "1.1924",
+                "proof": "2252",
+                "disproof": "1165",
+                "size": "22"
+              },
+              {
+                "move": "b4",
+                "score": "1.0558",
+                "proof": "1639",
+                "disproof": "6672",
+                "size": "198"
+              },
+              {
+                "move": "Qe2",
+                "score": "0.7225",
+                "proof": "2637",
+                "disproof": "1143",
+                "size": "22"
+              },
+              {
+                "move": "Qd2",
+                "score": "0.7058",
+                "proof": "3103",
+                "disproof": "923",
+                "size": "22"
+              },
+              {
+                "move": "Ke2",
+                "score": "0.4813",
+                "proof": "4502",
+                "disproof": "1015",
+                "size": "76"
+              },
+              {
+                "move": "h3",
+                "score": "0.4304",
+                "proof": "3360",
+                "disproof": "785",
+                "size": "22"
+              },
+              {
+                "move": "f3",
+                "score": "0.2518",
+                "proof": "5988",
+                "disproof": "393",
+                "size": "22"
+              },
+              {
+                "move": "a4",
+                "score": "0.1844",
+                "proof": "4827",
+                "disproof": "459",
+                "size": "22"
+              },
+              {
+                "move": "Nf3",
+                "score": "0.1654",
+                "proof": "4656",
+                "disproof": "583",
+                "size": "22"
+              },
+              {
+                "move": "h4",
+                "score": "0.1335",
+                "proof": "5103",
+                "disproof": "490",
+                "size": "22"
+              },
+              {
+                "move": "Na3",
+                "score": "0.1074",
+                "proof": "6054",
+                "disproof": "531",
+                "size": "22"
+              },
+              {
+                "move": "Nc3",
+                "score": "0.1039",
+                "proof": "6492",
+                "disproof": "467",
+                "size": "22"
+              },
+              {
+                "move": "d4",
+                "score": "0.0056",
+                "proof": "20420",
+                "disproof": "113",
+                "size": "22"
+              },
+              {
+                "move": "Qh5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "e4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "g4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Bb2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qf3",
+            "score": "1.9299",
+            "proof": "1835",
+            "disproof": "1706",
+            "size": "24"
+          }
+        },
+        {
+          "ply": 11,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "b4",
+              "cxb4",
+              "d3",
+              "b3",
+              "cxb3",
+              "Nc7",
+              "Qf3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+b4+cxb4+d3+b3+cxb3+Nc7+Qf3",
+            "rows": [
+              {
+                "move": "b5",
+                "score": "0.5181",
+                "proof": "1708",
+                "disproof": "885",
+                "size": "1"
+              },
+              {
+                "move": "Nd5",
+                "score": "0.2405",
+                "proof": "3797",
+                "disproof": "752",
+                "size": "3"
+              },
+              {
+                "move": "b6",
+                "score": "0.1155",
+                "proof": "1706",
+                "disproof": "197",
+                "size": "1"
+              },
+              {
+                "move": "a6",
+                "score": "0.0005",
+                "proof": "1976",
+                "disproof": "1",
+                "size": "1"
+              },
+              {
+                "move": "Na6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nb5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Ne6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Rb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "b5",
+            "score": "0.5181",
+            "proof": "1708",
+            "disproof": "885",
+            "size": "1"
+          }
+        }
+      ],
+      "stopReason": "book continuation unavailable"
+    },
+    {
+      "branch": "d4",
+      "moves": [
+        "e3",
+        "c5",
+        "Ba6",
+        "Nxa6",
+        "d4",
+        "cxd4",
+        "Qxd4",
+        "Qc7",
+        "Qxd7",
+        "Kxd7",
+        "Nd2"
+      ],
+      "decisions": [
+        {
+          "ply": 5,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "d4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+d4",
+            "rows": [
+              {
+                "move": "cxd4",
+                "score": "6.2548",
+                "proof": "4338",
+                "disproof": "9042",
+                "size": "294"
+              }
+            ]
+          },
+          "selected": {
+            "move": "cxd4",
+            "score": "6.2548",
+            "proof": "4338",
+            "disproof": "9042",
+            "size": "294"
+          }
+        },
+        {
+          "ply": 6,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "d4",
+              "cxd4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+d4+cxd4",
+            "rows": [
+              {
+                "move": "Qxd4",
+                "score": "0.1599",
+                "proof": "9042",
+                "disproof": "4338",
+                "size": "292"
+              },
+              {
+                "move": "exd4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxd4",
+            "score": "0.1599",
+            "proof": "9042",
+            "disproof": "4338",
+            "size": "292"
+          }
+        },
+        {
+          "ply": 7,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "d4",
+              "cxd4",
+              "Qxd4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+d4+cxd4+Qxd4",
+            "rows": [
+              {
+                "move": "Qc7",
+                "score": "6.2548",
+                "proof": "4494",
+                "disproof": "3367",
+                "size": "144"
+              },
+              {
+                "move": "Qa5",
+                "score": "2.4615",
+                "proof": "4338",
+                "disproof": "5675",
+                "size": "125"
+              },
+              {
+                "move": "Nb4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nc5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Qb6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Rb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qc7",
+            "score": "6.2548",
+            "proof": "4494",
+            "disproof": "3367",
+            "size": "144"
+          }
+        },
+        {
+          "ply": 8,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "d4",
+              "cxd4",
+              "Qxd4",
+              "Qc7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+d4+cxd4+Qxd4+Qc7",
+            "rows": [
+              {
+                "move": "Qxd7",
+                "score": "0.1599",
+                "proof": "3367",
+                "disproof": "1452",
+                "size": "42"
+              },
+              {
+                "move": "Qxg7",
+                "score": "0.1284",
+                "proof": "4270",
+                "disproof": "702",
+                "size": "28"
+              },
+              {
+                "move": "Qxa7",
+                "score": "0.1028",
+                "proof": "5011",
+                "disproof": "2340",
+                "size": "73"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxd7",
+            "score": "0.1599",
+            "proof": "3367",
+            "disproof": "1452",
+            "size": "42"
+          }
+        },
+        {
+          "ply": 9,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "d4",
+              "cxd4",
+              "Qxd4",
+              "Qc7",
+              "Qxd7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+d4+cxd4+Qxd4+Qc7+Qxd7",
+            "rows": [
+              {
+                "move": "Kxd7",
+                "score": "6.2548",
+                "proof": "1452",
+                "disproof": "1639",
+                "size": "27"
+              },
+              {
+                "move": "Qxc2",
+                "score": "0.9557",
+                "proof": "2149",
+                "disproof": "1057",
+                "size": "5"
+              },
+              {
+                "move": "Qxh2",
+                "score": "0.3091",
+                "proof": "3111",
+                "disproof": "671",
+                "size": "6"
+              },
+              {
+                "move": "Bxd7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Qxd7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Kxd7",
+            "score": "6.2548",
+            "proof": "1452",
+            "disproof": "1639",
+            "size": "27"
+          }
+        },
+        {
+          "ply": 10,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "d4",
+              "cxd4",
+              "Qxd4",
+              "Qc7",
+              "Qxd7",
+              "Kxd7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+d4+cxd4+Qxd4+Qc7+Qxd7+Kxd7",
+            "rows": [
+              {
+                "move": "Nd2",
+                "score": "0.1599",
+                "proof": "1645",
+                "disproof": "263",
+                "size": "1"
+              },
+              {
+                "move": "b3",
+                "score": "0.1367",
+                "proof": "1639",
+                "disproof": "224",
+                "size": "1"
+              },
+              {
+                "move": "Kd1",
+                "score": "0.0817",
+                "proof": "1640",
+                "disproof": "134",
+                "size": "1"
+              },
+              {
+                "move": "Ke2",
+                "score": "0.0774",
+                "proof": "1653",
+                "disproof": "128",
+                "size": "1"
+              },
+              {
+                "move": "Kd2",
+                "score": "0.0503",
+                "proof": "6804",
+                "disproof": "320",
+                "size": "3"
+              },
+              {
+                "move": "Kf1",
+                "score": "0.0358",
+                "proof": "1648",
+                "disproof": "59",
+                "size": "1"
+              },
+              {
+                "move": "c3",
+                "score": "0.0353",
+                "proof": "1644",
+                "disproof": "58",
+                "size": "1"
+              },
+              {
+                "move": "Ne2",
+                "score": "0.0322",
+                "proof": "1648",
+                "disproof": "53",
+                "size": "1"
+              },
+              {
+                "move": "g3",
+                "score": "0.0304",
+                "proof": "1645",
+                "disproof": "50",
+                "size": "1"
+              },
+              {
+                "move": "h3",
+                "score": "0.0255",
+                "proof": "1646",
+                "disproof": "42",
+                "size": "1"
+              },
+              {
+                "move": "c4",
+                "score": "0.0231",
+                "proof": "1644",
+                "disproof": "38",
+                "size": "1"
+              },
+              {
+                "move": "a3",
+                "score": "0.0200",
+                "proof": "1649",
+                "disproof": "33",
+                "size": "1"
+              },
+              {
+                "move": "h4",
+                "score": "0.0152",
+                "proof": "1640",
+                "disproof": "25",
+                "size": "1"
+              },
+              {
+                "move": "f3",
+                "score": "0.0091",
+                "proof": "1640",
+                "disproof": "15",
+                "size": "1"
+              },
+              {
+                "move": "e4",
+                "score": "0.0018",
+                "proof": "1653",
+                "disproof": "3",
+                "size": "1"
+              },
+              {
+                "move": "g4",
+                "score": "0.0018",
+                "proof": "1704",
+                "disproof": "3",
+                "size": "1"
+              },
+              {
+                "move": "Nf3",
+                "score": "0.0012",
+                "proof": "1711",
+                "disproof": "2",
+                "size": "1"
+              },
+              {
+                "move": "b4",
+                "score": "0.0010",
+                "proof": "1963",
+                "disproof": "2",
+                "size": "1"
+              },
+              {
+                "move": "Bd2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Na3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Nd2",
+            "score": "0.1599",
+            "proof": "1645",
+            "disproof": "263",
+            "size": "1"
+          }
+        }
+      ],
+      "stopReason": "book continuation unavailable"
+    },
+    {
+      "branch": "Qh5",
+      "moves": [
+        "e3",
+        "c5",
+        "Ba6",
+        "Nxa6",
+        "Qh5",
+        "Qb6",
+        "Qxh7",
+        "Rxh7",
+        "b3",
+        "Rxh2",
+        "Rxh2",
+        "Qxb3",
+        "axb3",
+        "c4",
+        "Rxa6"
+      ],
+      "decisions": [
+        {
+          "ply": 5,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5",
+            "rows": [
+              {
+                "move": "Qb6",
+                "score": "0.5986",
+                "proof": "16831",
+                "disproof": "3253",
+                "size": "477"
+              },
+              {
+                "move": "Qa5",
+                "score": "0.3650",
+                "proof": "17019",
+                "disproof": "1054",
+                "size": "134"
+              },
+              {
+                "move": "Qc7",
+                "score": "0.1890",
+                "proof": "16784",
+                "disproof": "1802",
+                "size": "518"
+              },
+              {
+                "move": "Nc7",
+                "score": "0.1464",
+                "proof": "16819",
+                "disproof": "348",
+                "size": "53"
+              },
+              {
+                "move": "Nb8",
+                "score": "0.1432",
+                "proof": "16865",
+                "disproof": "375",
+                "size": "52"
+              },
+              {
+                "move": "Nh6",
+                "score": "0.1322",
+                "proof": "16734",
+                "disproof": "571",
+                "size": "197"
+              },
+              {
+                "move": "b6",
+                "score": "0.1201",
+                "proof": "137848",
+                "disproof": "257",
+                "size": "4253"
+              },
+              {
+                "move": "h6",
+                "score": "0.0400",
+                "proof": "17042",
+                "disproof": "316",
+                "size": "150"
+              },
+              {
+                "move": "Rb8",
+                "score": "0.0369",
+                "proof": "18779",
+                "disproof": "329",
+                "size": "104"
+              },
+              {
+                "move": "f6",
+                "score": "0.0259",
+                "proof": "20502",
+                "disproof": "228",
+                "size": "6"
+              },
+              {
+                "move": "Nb4",
+                "score": "0.0249",
+                "proof": "20427",
+                "disproof": "261",
+                "size": "12"
+              },
+              {
+                "move": "c4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "g5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "g6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qb6",
+            "score": "0.5986",
+            "proof": "16831",
+            "disproof": "3253",
+            "size": "477"
+          }
+        },
+        {
+          "ply": 6,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6",
+            "rows": [
+              {
+                "move": "Qxh7",
+                "score": "1.6707",
+                "proof": "3285",
+                "disproof": "10427",
+                "size": "256"
+              },
+              {
+                "move": "Qxc5",
+                "score": "0.5666",
+                "proof": "3253",
+                "disproof": "3971",
+                "size": "116"
+              },
+              {
+                "move": "Qxf7",
+                "score": "0.2967",
+                "proof": "5351",
+                "disproof": "2433",
+                "size": "104"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxh7",
+            "score": "1.6707",
+            "proof": "3285",
+            "disproof": "10427",
+            "size": "256"
+          }
+        },
+        {
+          "ply": 7,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7",
+            "rows": [
+              {
+                "move": "Rxh7",
+                "score": "0.5986",
+                "proof": "10427",
+                "disproof": "2945",
+                "size": "222"
+              },
+              {
+                "move": "Qxb2",
+                "score": "0.2459",
+                "proof": "10821",
+                "disproof": "340",
+                "size": "33"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Rxh7",
+            "score": "0.5986",
+            "proof": "10427",
+            "disproof": "2945",
+            "size": "222"
+          }
+        },
+        {
+          "ply": 8,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7",
+              "Rxh7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7+Rxh7",
+            "rows": [
+              {
+                "move": "b3",
+                "score": "1.6707",
+                "proof": "2945",
+                "disproof": "1855",
+                "size": "30"
+              },
+              {
+                "move": "b4",
+                "score": "1.2012",
+                "proof": "3161",
+                "disproof": "7887",
+                "size": "168"
+              },
+              {
+                "move": "c3",
+                "score": "0.4027",
+                "proof": "3361",
+                "disproof": "685",
+                "size": "3"
+              },
+              {
+                "move": "Kd1",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Ke2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Kf1",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Na3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Ne2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "c4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "b3",
+            "score": "1.6707",
+            "proof": "2945",
+            "disproof": "1855",
+            "size": "30"
+          }
+        },
+        {
+          "ply": 9,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7",
+              "Rxh7",
+              "b3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7+Rxh7+b3",
+            "rows": [
+              {
+                "move": "Rxh2",
+                "score": "0.5986",
+                "proof": "1855",
+                "disproof": "1855",
+                "size": "26"
+              },
+              {
+                "move": "Qxb3",
+                "score": "0.4866",
+                "proof": "2240",
+                "disproof": "1090",
+                "size": "3"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Rxh2",
+            "score": "0.5986",
+            "proof": "1855",
+            "disproof": "1855",
+            "size": "26"
+          }
+        },
+        {
+          "ply": 10,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7",
+              "Rxh7",
+              "b3",
+              "Rxh2"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7+Rxh7+b3+Rxh2",
+            "rows": [
+              {
+                "move": "Rxh2",
+                "score": "1.6707",
+                "proof": "1855",
+                "disproof": "1855",
+                "size": "25"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Rxh2",
+            "score": "1.6707",
+            "proof": "1855",
+            "disproof": "1855",
+            "size": "25"
+          }
+        },
+        {
+          "ply": 11,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7",
+              "Rxh7",
+              "b3",
+              "Rxh2",
+              "Rxh2"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7+Rxh7+b3+Rxh2+Rxh2",
+            "rows": [
+              {
+                "move": "Qxb3",
+                "score": "0.5986",
+                "proof": "1855",
+                "disproof": "1855",
+                "size": "24"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxb3",
+            "score": "0.5986",
+            "proof": "1855",
+            "disproof": "1855",
+            "size": "24"
+          }
+        },
+        {
+          "ply": 12,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7",
+              "Rxh7",
+              "b3",
+              "Rxh2",
+              "Rxh2",
+              "Qxb3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7+Rxh7+b3+Rxh2+Rxh2+Qxb3",
+            "rows": [
+              {
+                "move": "axb3",
+                "score": "1.6707",
+                "proof": "1855",
+                "disproof": "1855",
+                "size": "22"
+              },
+              {
+                "move": "cxb3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "axb3",
+            "score": "1.6707",
+            "proof": "1855",
+            "disproof": "1855",
+            "size": "22"
+          }
+        },
+        {
+          "ply": 13,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7",
+              "Rxh7",
+              "b3",
+              "Rxh2",
+              "Rxh2",
+              "Qxb3",
+              "axb3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7+Rxh7+b3+Rxh2+Rxh2+Qxb3+axb3",
+            "rows": [
+              {
+                "move": "c4",
+                "score": "0.5986",
+                "proof": "2197",
+                "disproof": "1169",
+                "size": "3"
+              },
+              {
+                "move": "Nc7",
+                "score": "0.0499",
+                "proof": "7038",
+                "disproof": "351",
+                "size": "2"
+              },
+              {
+                "move": "Nh6",
+                "score": "0.0490",
+                "proof": "1857",
+                "disproof": "91",
+                "size": "1"
+              },
+              {
+                "move": "Kd8",
+                "score": "0.0424",
+                "proof": "1863",
+                "disproof": "79",
+                "size": "1"
+              },
+              {
+                "move": "Nb8",
+                "score": "0.0318",
+                "proof": "1857",
+                "disproof": "59",
+                "size": "1"
+              },
+              {
+                "move": "e6",
+                "score": "0.0209",
+                "proof": "1864",
+                "disproof": "39",
+                "size": "1"
+              },
+              {
+                "move": "f6",
+                "score": "0.0119",
+                "proof": "1855",
+                "disproof": "22",
+                "size": "1"
+              },
+              {
+                "move": "g5",
+                "score": "0.0085",
+                "proof": "1875",
+                "disproof": "16",
+                "size": "1"
+              },
+              {
+                "move": "g6",
+                "score": "0.0078",
+                "proof": "1915",
+                "disproof": "15",
+                "size": "1"
+              },
+              {
+                "move": "f5",
+                "score": "0.0063",
+                "proof": "1893",
+                "disproof": "12",
+                "size": "1"
+              },
+              {
+                "move": "Nf6",
+                "score": "0.0011",
+                "proof": "1880",
+                "disproof": "2",
+                "size": "1"
+              },
+              {
+                "move": "Nb4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Rb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "c4",
+            "score": "0.5986",
+            "proof": "2197",
+            "disproof": "1169",
+            "size": "3"
+          }
+        },
+        {
+          "ply": 14,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qh5",
+              "Qb6",
+              "Qxh7",
+              "Rxh7",
+              "b3",
+              "Rxh2",
+              "Rxh2",
+              "Qxb3",
+              "axb3",
+              "c4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qh5+Qb6+Qxh7+Rxh7+b3+Rxh2+Rxh2+Qxb3+axb3+c4",
+            "rows": [
+              {
+                "move": "Rxa6",
+                "score": "1.6707",
+                "proof": "1169",
+                "disproof": "1953",
+                "size": "1"
+              },
+              {
+                "move": "bxc4",
+                "score": "0.2084",
+                "proof": "1171",
+                "disproof": "244",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Rxa6",
+            "score": "1.6707",
+            "proof": "1169",
+            "disproof": "1953",
+            "size": "1"
+          }
+        }
+      ],
+      "stopReason": "book continuation unavailable"
+    },
+    {
+      "branch": "Qf3",
+      "moves": [
+        "e3",
+        "c5",
+        "Ba6",
+        "Nxa6",
+        "Qf3",
+        "Qb6",
+        "Qxb7",
+        "Qxb7",
+        "b3",
+        "Qxg2",
+        "Ba3",
+        "Qxf2",
+        "Bxc5"
+      ],
+      "decisions": [
+        {
+          "ply": 5,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3",
+            "rows": [
+              {
+                "move": "Qb6",
+                "score": "1.4926",
+                "proof": "7789",
+                "disproof": "5853",
+                "size": "521"
+              },
+              {
+                "move": "Qc7",
+                "score": "1.1697",
+                "proof": "7531",
+                "disproof": "1699",
+                "size": "111"
+              },
+              {
+                "move": "Rb8",
+                "score": "0.5557",
+                "proof": "7659",
+                "disproof": "688",
+                "size": "103"
+              },
+              {
+                "move": "b6",
+                "score": "0.3051",
+                "proof": "14692",
+                "disproof": "578",
+                "size": "597"
+              },
+              {
+                "move": "Nb4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Qa5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "c4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qb6",
+            "score": "1.4926",
+            "proof": "7789",
+            "disproof": "5853",
+            "size": "521"
+          }
+        },
+        {
+          "ply": 6,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3",
+              "Qb6"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3+Qb6",
+            "rows": [
+              {
+                "move": "Qxb7",
+                "score": "0.6700",
+                "proof": "5853",
+                "disproof": "5341",
+                "size": "325"
+              },
+              {
+                "move": "Qxf7",
+                "score": "0.4163",
+                "proof": "6059",
+                "disproof": "2448",
+                "size": "195"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxb7",
+            "score": "0.6700",
+            "proof": "5853",
+            "disproof": "5341",
+            "size": "325"
+          }
+        },
+        {
+          "ply": 7,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3",
+              "Qb6",
+              "Qxb7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3+Qb6+Qxb7",
+            "rows": [
+              {
+                "move": "Qxb7",
+                "score": "1.4926",
+                "proof": "5341",
+                "disproof": "5853",
+                "size": "321"
+              },
+              {
+                "move": "Bxb7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Qxb2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxb7",
+            "score": "1.4926",
+            "proof": "5341",
+            "disproof": "5853",
+            "size": "321"
+          }
+        },
+        {
+          "ply": 8,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3",
+              "Qb6",
+              "Qxb7",
+              "Qxb7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3+Qb6+Qxb7+Qxb7",
+            "rows": [
+              {
+                "move": "b3",
+                "score": "0.6700",
+                "proof": "5853",
+                "disproof": "2437",
+                "size": "105"
+              },
+              {
+                "move": "b4",
+                "score": "0.2514",
+                "proof": "5889",
+                "disproof": "2540",
+                "size": "190"
+              },
+              {
+                "move": "c3",
+                "score": "0.0584",
+                "proof": "6753",
+                "disproof": "364",
+                "size": "3"
+              },
+              {
+                "move": "Ke2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Kf1",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Kd1",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Na3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Ne2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "c4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "b3",
+            "score": "0.6700",
+            "proof": "5853",
+            "disproof": "2437",
+            "size": "105"
+          }
+        },
+        {
+          "ply": 9,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3",
+              "Qb6",
+              "Qxb7",
+              "Qxb7",
+              "b3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3+Qb6+Qxb7+Qxb7+b3",
+            "rows": [
+              {
+                "move": "Qxg2",
+                "score": "1.4926",
+                "proof": "2570",
+                "disproof": "4635",
+                "size": "62"
+              },
+              {
+                "move": "Qxb3",
+                "score": "0.2199",
+                "proof": "2437",
+                "disproof": "1218",
+                "size": "42"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxg2",
+            "score": "1.4926",
+            "proof": "2570",
+            "disproof": "4635",
+            "size": "62"
+          }
+        },
+        {
+          "ply": 10,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3",
+              "Qb6",
+              "Qxb7",
+              "Qxb7",
+              "b3",
+              "Qxg2"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3+Qb6+Qxb7+Qxb7+b3+Qxg2",
+            "rows": [
+              {
+                "move": "Ba3",
+                "score": "0.6700",
+                "proof": "5064",
+                "disproof": "1281",
+                "size": "12"
+              },
+              {
+                "move": "b4",
+                "score": "0.1756",
+                "proof": "4635",
+                "disproof": "581",
+                "size": "7"
+              },
+              {
+                "move": "a4",
+                "score": "0.1137",
+                "proof": "7273",
+                "disproof": "387",
+                "size": "5"
+              },
+              {
+                "move": "Kd1",
+                "score": "0.0366",
+                "proof": "10136",
+                "disproof": "249",
+                "size": "5"
+              },
+              {
+                "move": "c4",
+                "score": "0.0070",
+                "proof": "13327",
+                "disproof": "72",
+                "size": "5"
+              },
+              {
+                "move": "Bb2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Na3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Ne2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nh3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "a3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "c3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "e4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "h3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "h4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Ke2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Kf1",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Ba3",
+            "score": "0.6700",
+            "proof": "5064",
+            "disproof": "1281",
+            "size": "12"
+          }
+        },
+        {
+          "ply": 11,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3",
+              "Qb6",
+              "Qxb7",
+              "Qxb7",
+              "b3",
+              "Qxg2",
+              "Ba3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3+Qb6+Qxb7+Qxb7+b3+Qxg2+Ba3",
+            "rows": [
+              {
+                "move": "Qxf2",
+                "score": "1.4926",
+                "proof": "1281",
+                "disproof": "1912",
+                "size": "3"
+              },
+              {
+                "move": "Qxg1",
+                "score": "1.3636",
+                "proof": "1753",
+                "disproof": "1665",
+                "size": "3"
+              },
+              {
+                "move": "Qxh2",
+                "score": "0.4667",
+                "proof": "2271",
+                "disproof": "1037",
+                "size": "3"
+              },
+              {
+                "move": "Qxh1",
+                "score": "0.0482",
+                "proof": "9334",
+                "disproof": "450",
+                "size": "2"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxf2",
+            "score": "1.4926",
+            "proof": "1281",
+            "disproof": "1912",
+            "size": "3"
+          }
+        },
+        {
+          "ply": 12,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qf3",
+              "Qb6",
+              "Qxb7",
+              "Qxb7",
+              "b3",
+              "Qxg2",
+              "Ba3",
+              "Qxf2"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qf3+Qb6+Qxb7+Qxb7+b3+Qxg2+Ba3+Qxf2",
+            "rows": [
+              {
+                "move": "Bxc5",
+                "score": "0.6700",
+                "proof": "1912",
+                "disproof": "1281",
+                "size": "1"
+              },
+              {
+                "move": "Kxf2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Bxc5",
+            "score": "0.6700",
+            "proof": "1912",
+            "disproof": "1281",
+            "size": "1"
+          }
+        }
+      ],
+      "stopReason": "book continuation unavailable"
+    },
+    {
+      "branch": "Qg4",
+      "moves": [
+        "e3",
+        "c5",
+        "Ba6",
+        "Nxa6",
+        "Qg4",
+        "Qb6",
+        "Qxd7",
+        "Kxd7",
+        "b3",
+        "Qxb3",
+        "axb3",
+        "c4",
+        "Rxa6",
+        "bxa6",
+        "bxc4"
+      ],
+      "decisions": [
+        {
+          "ply": 5,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4",
+            "rows": [
+              {
+                "move": "Qb6",
+                "score": "1.1008",
+                "proof": "3847",
+                "disproof": "6361",
+                "size": "303"
+              },
+              {
+                "move": "Qa5",
+                "score": "1.0723",
+                "proof": "4234",
+                "disproof": "839",
+                "size": "33"
+              },
+              {
+                "move": "g5",
+                "score": "0.2610",
+                "proof": "3923",
+                "disproof": "960",
+                "size": "28"
+              },
+              {
+                "move": "g6",
+                "score": "0.2209",
+                "proof": "4929",
+                "disproof": "592",
+                "size": "3"
+              },
+              {
+                "move": "f6",
+                "score": "0.0034",
+                "proof": "24894",
+                "disproof": "80",
+                "size": "3"
+              },
+              {
+                "move": "Nb4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nh6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Qc7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Rb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "b6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "d6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "h5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "h6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nb8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "c4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qb6",
+            "score": "1.1008",
+            "proof": "3847",
+            "disproof": "6361",
+            "size": "303"
+          }
+        },
+        {
+          "ply": 6,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6",
+            "rows": [
+              {
+                "move": "Qxd7",
+                "score": "0.9084",
+                "proof": "6361",
+                "disproof": "2849",
+                "size": "252"
+              },
+              {
+                "move": "Qxg7",
+                "score": "0.1191",
+                "proof": "7265",
+                "disproof": "998",
+                "size": "50"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxd7",
+            "score": "0.9084",
+            "proof": "6361",
+            "disproof": "2849",
+            "size": "252"
+          }
+        },
+        {
+          "ply": 7,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7",
+            "rows": [
+              {
+                "move": "Kxd7",
+                "score": "1.1008",
+                "proof": "2849",
+                "disproof": "6361",
+                "size": "248"
+              },
+              {
+                "move": "Bxd7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Qxb2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Kxd7",
+            "score": "1.1008",
+            "proof": "2849",
+            "disproof": "6361",
+            "size": "248"
+          }
+        },
+        {
+          "ply": 8,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7",
+              "Kxd7"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7+Kxd7",
+            "rows": [
+              {
+                "move": "b3",
+                "score": "0.9084",
+                "proof": "6361",
+                "disproof": "1740",
+                "size": "75"
+              },
+              {
+                "move": "b4",
+                "score": "0.2434",
+                "proof": "7236",
+                "disproof": "821",
+                "size": "148"
+              },
+              {
+                "move": "c3",
+                "score": "0.0441",
+                "proof": "6524",
+                "disproof": "288",
+                "size": "2"
+              },
+              {
+                "move": "Na3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "d3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Kd1",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Ke2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Kf1",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nc3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Ne2",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nh3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "a4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "c4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "d4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "f4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "g4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h3",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "h4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "b3",
+            "score": "0.9084",
+            "proof": "6361",
+            "disproof": "1740",
+            "size": "75"
+          }
+        },
+        {
+          "ply": 9,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7",
+              "Kxd7",
+              "b3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7+Kxd7+b3",
+            "rows": [
+              {
+                "move": "Qxb3",
+                "score": "1.1008",
+                "proof": "1740",
+                "disproof": "6361",
+                "size": "74"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Qxb3",
+            "score": "1.1008",
+            "proof": "1740",
+            "disproof": "6361",
+            "size": "74"
+          }
+        },
+        {
+          "ply": 10,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7",
+              "Kxd7",
+              "b3",
+              "Qxb3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7+Kxd7+b3+Qxb3",
+            "rows": [
+              {
+                "move": "axb3",
+                "score": "0.9084",
+                "proof": "6361",
+                "disproof": "1409",
+                "size": "48"
+              },
+              {
+                "move": "cxb3",
+                "score": "0.0891",
+                "proof": "7527",
+                "disproof": "331",
+                "size": "25"
+              }
+            ]
+          },
+          "selected": {
+            "move": "axb3",
+            "score": "0.9084",
+            "proof": "6361",
+            "disproof": "1409",
+            "size": "48"
+          }
+        },
+        {
+          "ply": 11,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7",
+              "Kxd7",
+              "b3",
+              "Qxb3",
+              "axb3"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7+Kxd7+b3+Qxb3+axb3",
+            "rows": [
+              {
+                "move": "c4",
+                "score": "1.1008",
+                "proof": "1409",
+                "disproof": "1970",
+                "size": "9"
+              },
+              {
+                "move": "Nc7",
+                "score": "0.3593",
+                "proof": "2527",
+                "disproof": "908",
+                "size": "2"
+              },
+              {
+                "move": "Nb8",
+                "score": "0.2313",
+                "proof": "3282",
+                "disproof": "759",
+                "size": "2"
+              },
+              {
+                "move": "Nh6",
+                "score": "0.1538",
+                "proof": "4213",
+                "disproof": "648",
+                "size": "2"
+              },
+              {
+                "move": "e6",
+                "score": "0.1103",
+                "proof": "4879",
+                "disproof": "538",
+                "size": "2"
+              },
+              {
+                "move": "Ke6",
+                "score": "0.0783",
+                "proof": "5494",
+                "disproof": "430",
+                "size": "2"
+              },
+              {
+                "move": "g5",
+                "score": "0.0553",
+                "proof": "6331",
+                "disproof": "350",
+                "size": "2"
+              },
+              {
+                "move": "g6",
+                "score": "0.0415",
+                "proof": "7246",
+                "disproof": "301",
+                "size": "2"
+              },
+              {
+                "move": "f6",
+                "score": "0.0183",
+                "proof": "9716",
+                "disproof": "178",
+                "size": "2"
+              },
+              {
+                "move": "h6",
+                "score": "0.0126",
+                "proof": "11679",
+                "disproof": "147",
+                "size": "2"
+              },
+              {
+                "move": "h5",
+                "score": "0.0063",
+                "proof": "20936",
+                "disproof": "131",
+                "size": "2"
+              },
+              {
+                "move": "Rb8",
+                "score": "0.0007",
+                "proof": "1531",
+                "disproof": "1",
+                "size": "1"
+              },
+              {
+                "move": "Kc6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Kc7",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Kd8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Ke8",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Nb4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "f5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              },
+              {
+                "move": "Kd6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "Nf6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "b6",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              },
+              {
+                "move": "e5",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "c4",
+            "score": "1.1008",
+            "proof": "1409",
+            "disproof": "1970",
+            "size": "9"
+          }
+        },
+        {
+          "ply": 12,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7",
+              "Kxd7",
+              "b3",
+              "Qxb3",
+              "axb3",
+              "c4"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7+Kxd7+b3+Qxb3+axb3+c4",
+            "rows": [
+              {
+                "move": "Rxa6",
+                "score": "0.9084",
+                "proof": "1970",
+                "disproof": "1409",
+                "size": "6"
+              },
+              {
+                "move": "bxc4",
+                "score": "lost",
+                "proof": "∞",
+                "disproof": "0",
+                "size": "2"
+              }
+            ]
+          },
+          "selected": {
+            "move": "Rxa6",
+            "score": "0.9084",
+            "proof": "1970",
+            "disproof": "1409",
+            "size": "6"
+          }
+        },
+        {
+          "ply": 13,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7",
+              "Kxd7",
+              "b3",
+              "Qxb3",
+              "axb3",
+              "c4",
+              "Rxa6"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7+Kxd7+b3+Qxb3+axb3+c4+Rxa6",
+            "rows": [
+              {
+                "move": "bxa6",
+                "score": "1.1008",
+                "proof": "1409",
+                "disproof": "1551",
+                "size": "2"
+              },
+              {
+                "move": "cxb3",
+                "score": "0.0912",
+                "proof": "4614",
+                "disproof": "419",
+                "size": "3"
+              }
+            ]
+          },
+          "selected": {
+            "move": "bxa6",
+            "score": "1.1008",
+            "proof": "1409",
+            "disproof": "1551",
+            "size": "2"
+          }
+        },
+        {
+          "ply": 14,
+          "page": {
+            "moves": [
+              "e3",
+              "c5",
+              "Ba6",
+              "Nxa6",
+              "Qg4",
+              "Qb6",
+              "Qxd7",
+              "Kxd7",
+              "b3",
+              "Qxb3",
+              "axb3",
+              "c4",
+              "Rxa6",
+              "bxa6"
+            ],
+            "url": "https://catalin.francu.com/nilatac/book.php?query=e3+c5+Ba6+Nxa6+Qg4+Qb6+Qxd7+Kxd7+b3+Qxb3+axb3+c4+Rxa6+bxa6",
+            "rows": [
+              {
+                "move": "bxc4",
+                "score": "0.9084",
+                "proof": "1551",
+                "disproof": "1409",
+                "size": "1"
+              }
+            ]
+          },
+          "selected": {
+            "move": "bxc4",
+            "score": "0.9084",
+            "proof": "1551",
+            "disproof": "1409",
+            "size": "1"
+          }
+        }
+      ],
+      "stopReason": "book continuation unavailable"
+    }
+  ]
+}

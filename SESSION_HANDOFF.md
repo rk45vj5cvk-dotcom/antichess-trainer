@@ -11,6 +11,15 @@ App directory: `antichess-mobile-starter`
 - Chapter completion has a short click, a green rectangle around Next line,
   and commentary ending with “Click Next Line.”
 - Modern Defense: five chapters from the uploaded PGN.
+- Polish Defense — Introduction: 11 chapters training Black after
+  1. e3 c5 2. Ba6 Nxa6, covering White's b4, d4, Qh5, Qf3, and Qg4.
+  Each branch has a first-response checkpoint and its available book continuation.
+  Nilatac's top-ranked replies were used; scores are search heuristics, not
+  proof of optimality or a forced win. No continuation is invented beyond the
+  available book. Data, attribution, CC BY-SA 3.0 license, and caveats are in
+  antichess-mobile-starter/studies/polish/.
+- Black lessons automatically supply White's initial move; selecting another
+  module restores its intended training color (White by default).
 - Wizard Opening: 38 progressive chapters, training White, adapted from study
   f3NuTHGo. Every chapter replays from the initial position. Quiz chapters are
   excluded. Former chapter 5 was removed as unnecessary clean-up; later chapters
@@ -29,8 +38,8 @@ App directory: `antichess-mobile-starter`
   Never start advanced training chapters from a midgame position.
 - Stop training before obvious forced-win clean-up, where several simple human
   finishes exist. Do not require memorizing arbitrary finishing sequences.
-- User plans to review and shorten Wizard commentary. No further edits requested
-  at the time of this handoff; wait for their next instruction.
+- User plans to review and shorten Wizard commentary. Polish Defense is an
+  introductory first version to review before expanding to more White branches.
 - The user previews on their Mac and iPhone using Expo Go. Localhost links from
   the cloud environment cannot be used as public previews. File downloads from
   this chat failed; GitHub branch updates have worked.
@@ -58,6 +67,11 @@ filesystems are separate; the user must pull to update the Mac.
   compilation/bundling as a device test.
 - Rebuild Wizard with node scripts/build-wizard.mjs; it validates replay legality.
   See studies/WIZARD_CHAPTERS.md for lesson order and source provenance.
+- Rebuild Polish with node scripts/build-polish.mjs. It checks saved database
+  selections and all 96 replayed plies. Run node scripts/check-training-flow.mjs
+  for a headless smoke check of Black auto-start/replies, wrong-move retry,
+  Learn restart, and unchanged White starting behavior. Native views/audio are
+  mocked in that check; test the presentation on an actual phone separately.
 - Read CODEX_START_HERE.md for authoring rules. The local app.config.js override
   removes the unsupported expo-status-bar config plugin; retain it.
 - Latest feature commit before this handoff: 07d1e4c.
