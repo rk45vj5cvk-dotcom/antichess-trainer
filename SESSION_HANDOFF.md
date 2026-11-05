@@ -75,3 +75,25 @@ filesystems are separate; the user must pull to update the Mac.
 - Read CODEX_START_HERE.md for authoring rules. The local app.config.js override
   removes the unsupported expo-status-bar config plugin; retain it.
 - Latest feature commit before this handoff: 07d1e4c.
+
+## Latest stopping point — Polish Defense review
+
+- Polish Defense — Introduction is complete and pushed on the same branch:
+  11 chapters, 96 legal replayed plies, training Black from the initial board.
+- Lesson comments were shortened: no Nilatac references, database-ranking
+  boilerplate, or general antichess rule reminders in instructional comments.
+- Required source credit and license links appear only in chapter 1's comment
+  box. PGN source/annotator/license headers are only in the first chapter too.
+- User considers this a good introductory course but wants selected branches
+  to go deeper. Discussed separate Introduction and Mastery courses, inspired
+  by Chessreps. No mastery course or course-tier UI has been implemented.
+- User was given the editable PGN on GitHub:
+  antichess-mobile-starter/studies/polish/polish-training.pgn
+  They can import all 11 chapters into Lichess, edit comments, then upload the
+  full exported study here. Lichess changes do not automatically sync.
+- Next step: wait for the user's edited PGN or specific deeper branches. Preserve
+  their future comment edits; the current build-polish.mjs regenerates comments
+  from templates, so do not blindly regenerate over an edited module.
+- Latest feature commit at this stopping point: df584bd. TypeScript and move
+  validation passed after attribution changes; headless Black training-flow and
+  iOS bundling passed when the Polish module was introduced.
