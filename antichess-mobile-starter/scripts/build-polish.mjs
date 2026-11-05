@@ -5,14 +5,14 @@ import {parseSan} from 'chessops/san';
 const snapshot=JSON.parse(fs.readFileSync(new URL('../studies/polish/database-snapshot.json',import.meta.url),'utf8'));
 const prefix=['e3','c5','Ba6','Nxa6'];
 const rank=r=>r.score==='won'?Infinity:r.score==='lost'?-Infinity:Number(r.score);
-const intro='Train as Black. Every chapter replays from the initial position. White plays e3 and offers the bishop on a6. Learn Black’s responses to five White third moves.';
+const intro='Train as Black in the Polish Defense.';
 const chapters=[{title:'Meet the Polish Defense',moves:prefix,branch:null,kind:'setup'}];
 const firstComments={
- b4:'Black must capture. Nilatac ranks the pawn capture above Nxb4, which it marks lost. Keep this distinction in mind.',
- d4:'The c-pawn capture is compulsory: Black has no other legal move here.',
- Qh5:'Nilatac ranks Qb6 first. The queen moves out through c7, which was cleared by c5.',
- Qf3:'Nilatac ranks Qb6 first against Qf3 too. Recognize the same queen route.',
- Qg4:'Nilatac ranks Qb6 first against Qg4 as well. This introductory repertoire uses that response consistently.',
+ b4:'Use the c-pawn to take on b4, keeping the knight on a6.',
+ d4:'The c-pawn takes on d4, opening the c-file.',
+ Qh5:'The queen reaches b6 through c7, which was cleared by c5.',
+ Qf3:'The queen reaches b6 through c7, which was cleared by c5.',
+ Qg4:'The queen reaches b6 through c7, which was cleared by c5.',
 };
 for(const line of snapshot.lines) {
  assert.deepEqual(line.moves.slice(0,4),prefix);
@@ -35,21 +35,9 @@ for(const c of chapters) {
 const comments=(c,i)=>{
  if(i===0)return 'White opens the bishop’s diagonal.';
  if(i===1)return 'Black advances the c-pawn, clearing c7 for the queen.';
- if(i===2)return 'White offers the bishop on a6. Captures are mandatory in antichess.';
+ if(i===2)return 'White offers the bishop on a6.';
  if(i===3)return 'Black’s knight captures on a6. This is the Polish Defense starting position.';
  if(i===5)return firstComments[c.branch];
- const line=snapshot.lines.find(l=>l.branch===c.branch);
- const decision=line?.decisions.find(d=>d.ply===i);
- if(i%2===1&&decision){
-  const p=Antichess.default();
-  for(const san of c.moves.slice(0,i)) p.play(parseSan(p,san));
-  let legalDestinations=0;
-  for(const destinations of p.allDests().values()) {
-   for(const square of destinations) legalDestinations++;
-  }
-  return legalDestinations===1?'This move is forced.':
-   'This is Nilatac’s highest-ranked available reply at this position.';
- }
  return '';
 };
 const brace=s=>'{ '+s+' }';
@@ -58,11 +46,11 @@ const pgn=chapters.map(c=>[
  `[ChapterName "${c.title}"]`,'[Variant "Antichess"]','[Result "*"]',
  '[Source "https://catalin.francu.com/nilatac/"]','[Annotator "Adapted from Cătălin Frâncu / Nilatac by Antichess Trainer"]',
  '[License "CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/"]','',
- brace(intro+' Database rankings guide these drills; they are not a claim of a proven win.'),
+ brace(intro),
  c.moves.map((san,i)=>{
   let note=comments(c,i);
   if(i===c.moves.length-1)note+=' '+(c.kind==='continuation'?
-   'This introductory drill stops at Black’s last available book-backed reply on this path. Further play is not included; this is not a claimed forced win.':
+   'This is the end of this opening line.':
    c.kind==='response'?'This checkpoint focuses on recognizing the first response. The next chapter extends this branch.':
    'The next chapters cover White’s b4, d4, Qh5, Qf3, and Qg4.');
   return `${i%2===0?`${Math.floor(i/2)+1}. `:''}${san}${note?' '+brace(note):''}`;
