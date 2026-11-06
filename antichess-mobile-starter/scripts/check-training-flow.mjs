@@ -10,7 +10,7 @@ import * as san from 'chessops/san';
 import * as util from 'chessops/util';
 const app=fs.readFileSync('App.tsx','utf8');
 const data=['completedStudy','modernDefenseStudy','wizardStudy','polishStudy'].map(n=>fs.readFileSync(`src/${n}.ts`,'utf8').replace(/^export /gm,'')).join('\n');
-const code=data+'\n'+app.slice(app.indexOf('type Line =')).replace('export default function App','function App')+'\nreturn {Board, polishCourse, initialCourse};';
+const code=data+'\n'+app.slice(app.indexOf('type Line =')).replace('export default function App','function App')+'\nreturn {Board, polishCourse, initialCourse, readCourse};';
 const js=ts.transpileModule(code,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.None,jsx:ts.JsxEmit.React}}).outputText;
 let slots=[],cursor=0,effects=[],pending=[],timers=new Map(),nextTimer=1;
 const state=initial=>{const i=cursor++;if(!(i in slots))slots[i]=typeof initial==='function'?initial():initial;return[slots[i],v=>{slots[i]=typeof v==='function'?v(slots[i]):v;}];};
@@ -20,10 +20,13 @@ const React={createElement:(type,props,...children)=>({type,props:{...props,chil
 const audio=new Map();
 const env={React,useState:state,useRef:ref,useEffect:effect,useAudioPlayer:s=>{if(!audio.has(s))audio.set(s,{seekTo:async()=>{},play:()=>{}});return audio.get(s);},setAudioModeAsync:async()=>{},useWindowDimensions:()=>({width:390,height:844}),StyleSheet:{create:x=>x},Linking:{openURL:async()=>{}},pieceSvg:{},require:x=>x,console,setTimeout:fn=>{const id=nextTimer++;timers.set(id,fn);return id;},clearTimeout:id=>timers.delete(id),...pgn,...variant,...fen,...san,...util};
 for(const n of ['SafeAreaView','ScrollView','View','Text','Pressable','TextInput','SvgXml'])env[n]=n;
-const {Board,polishCourse,initialCourse}=new Function(...Object.keys(env),js)(...Object.values(env));
-assert.equal(polishCourse.lines.length,11);
-for(const l of polishCourse.lines){assert.equal(l.fen,fen.makeFen(variant.Antichess.default().toSetup()));assert.equal(l.moves.length%2,0);assert.deepEqual(l.sans.slice(0,4),['e3','c5','Ba6','Nxa6']);}
-let props={line:polishCourse.lines[2],color:'black',title:polishCourse.title,chapterIndex:2,chapterCount:11,soundEnabled:false,onClose(){},onPreviousChapter(){},onNextChapter(){},onToggleSound(){}};
+const {Board,polishCourse,initialCourse,readCourse}=new Function(...Object.keys(env),js)(...Object.values(env));
+assert.equal(polishCourse.lines.length,3);
+assert.equal(polishCourse.trainingColor,'white');
+assert.equal(polishCourse.title,'Defeating the Polish Defense');
+for(const l of polishCourse.lines){assert.equal(l.fen,fen.makeFen(variant.Antichess.default().toSetup()));assert.deepEqual(l.sans.slice(0,4),['e3','c5','Ba6','Nxa6']);}
+const blackFixture=readCourse(fs.readFileSync('studies/polish/archived-black-introduction.pgn','utf8'));
+let props={line:blackFixture.lines[2],color:'black',title:blackFixture.title,chapterIndex:2,chapterCount:11,soundEnabled:false,onClose(){},onPreviousChapter(){},onNextChapter(){},onToggleSound(){}};
 let tree;
 function render(){cursor=0;tree=Board(props);const work=pending;pending=[];work.forEach(f=>f());return tree;}
 function walk(node,pred){if(!node||typeof node!=='object')return; if(pred(node))return node;for(const child of node.props?.children||[]){const result=walk(child,pred);if(result)return result;}}
@@ -51,4 +54,12 @@ assert.ok(walk(tree,n=>n.props?.accessibilityLabel==='e3 white pawn'));
 // Unmount clears scheduled opponent turns; mounting a White lesson needs no opening timer.
 for(const e of effects)e?.cleanup?.();slots=[];effects=[];pending=[];timers.clear();
 props={...props,line:initialCourse.lines[0],color:'white'};render();assert.equal(timers.size,0);
-console.log('PASS: app importer loads 11 initial-position chapters; Black auto-start/replies, rejected wrong move, retry, restart, and White start regression.');
+for(const e of effects)e?.cleanup?.();slots=[];effects=[];pending=[];timers.clear();
+props={...props,line:polishCourse.lines[2],title:polishCourse.title,color:'white',chapterIndex:2,chapterCount:3};render();
+square('e2');square('e3');tick();
+square('f1');square('a6');tick();
+square('b2');square('b4');tick();
+square('d2');square('d3');
+assert.ok(walk(tree,n=>n.props?.accessibilityLabel==='d3 white pawn'));
+assert.ok(walk(tree,n=>n.type==='Text'&&n.props.children.includes('Click Next Line.')));
+console.log('PASS: 3 initial-position White chapters; 4. d3 completion; Black auto-start/replies, wrong-move retry, restart, and White start regression.');

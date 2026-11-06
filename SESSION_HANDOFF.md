@@ -103,3 +103,31 @@ filesystems are separate; the user must pull to update the Mac.
 - User wants a future advanced Traps module and supplied a Polish continuation
   beginning 5...d6. See notes/FUTURE_TRAPS.md for screenshot transcription and
   unresolved context. They explicitly said not to implement it now.
+
+## Latest revision — Defeating the Polish Defense
+
+This supersedes the earlier Black introductory-course plan above.
+
+- User now wants to train White against the Polish, identifying 4. d3 as the
+  key improvement and considering the legacy database out of date.
+- Active title: Defeating the Polish Defense; trainingColor: white.
+- Current repertoire: 1. e3 c5 2. Ba6 Nxa6 3. b4 cxb4 4. d3.
+- Three initial-position checkpoints (4, 6, 7 plies; 17 total) replace the 11
+  Black chapters. The full continuation after 4. d3 is pending current analysis
+  or a user-authored PGN; do not invent replies or reuse obsolete rankings.
+- The old Black PGN remains as studies/polish/archived-black-introduction.pgn
+  for recovery and the Black training-flow regression fixture only.
+- build-polish.mjs now generates the user-directed White foundation and no
+  longer chooses moves from database-snapshot.json.
+- Training-flow checks include completing White's 4. d3 chapter, alongside
+  existing Black auto-start/reply and wrong-move/retry regressions.
+- Source credit stays only in chapter 1. No generic rule reminders in comments.
+
+- User supplied a newly restored preferred openings database:
+  https://antichess.onrender.com/openings/
+  Environment HTTP proxy currently denies this host (CONNECT 403). A draft
+  adding only that domain to existing allowed domains has been saved; requires
+  user review/save/publish. Do not claim site data has been inspected yet.
+- White-side conversion was validated (TypeScript, training flow, iOS bundle)
+  and committed locally before access was available. Not pushed yet: resume
+  source inspection and deeper branches when the updated environment is ready.

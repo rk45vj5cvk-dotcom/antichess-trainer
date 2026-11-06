@@ -125,7 +125,7 @@ const initialCourse = readCourse(study);
 const modernDefenseCourse = { ...readCourse(modernDefenseStudy), title: 'Modern Defense' };
 const wizardCourse: Course = { ...readCourse(wizardStudy), trainingColor: 'white' };
 const polishCourse: Course = {
-  ...readCourse(polishStudy), trainingColor: 'black',
+  ...readCourse(polishStudy), trainingColor: 'white',
   attribution: {
     text: 'Adapted from Cătălin Frâncu’s Nilatac opening book',
     sourceUrl: 'https://catalin.francu.com/nilatac/',
@@ -719,7 +719,7 @@ export default function App() {
         <Text style={s.heading}>Import another study</Text>
         <Text style={s.text}>
           Paste an Antichess PGN. Extra imports last until the app reloads.
-          Suicide Defense, Modern Defense, Wizard Opening, and Polish Defense are included automatically.
+          Suicide Defense, Modern Defense, Wizard Opening, and Defeating the Polish Defense are included automatically.
         </Text>
         <TextInput
           accessibilityLabel="PGN text"

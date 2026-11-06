@@ -1,0 +1,101 @@
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "Meet the Polish Defense"]
+[Variant "Antichess"]
+[Result "*"]
+[Source "https://catalin.francu.com/nilatac/"]
+[Annotator "Adapted from Cătălin Frâncu / Nilatac by Antichess Trainer"]
+[License "CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. The next chapters cover White’s b4, d4, Qh5, Qf3, and Qg4. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. b4: Black’s first response"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. b4 cxb4 { Use the c-pawn to take on b4, keeping the knight on a6. This checkpoint focuses on recognizing the first response. The next chapter extends this branch. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. b4: opening continuation"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. b4 cxb4 { Use the c-pawn to take on b4, keeping the knight on a6. } 4. d3 b3 5. cxb3 Nc7 6. Qf3 b5 {  This is the end of this opening line. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. d4: Black’s first response"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. d4 cxd4 { The c-pawn takes on d4, opening the c-file. This checkpoint focuses on recognizing the first response. The next chapter extends this branch. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. d4: opening continuation"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. d4 cxd4 { The c-pawn takes on d4, opening the c-file. } 4. Qxd4 Qc7 5. Qxd7 Kxd7 {  This is the end of this opening line. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. Qh5: Black’s first response"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. Qh5 Qb6 { The queen reaches b6 through c7, which was cleared by c5. This checkpoint focuses on recognizing the first response. The next chapter extends this branch. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. Qh5: opening continuation"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. Qh5 Qb6 { The queen reaches b6 through c7, which was cleared by c5. } 4. Qxh7 Rxh7 5. b3 Rxh2 6. Rxh2 Qxb3 7. axb3 c4 {  This is the end of this opening line. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. Qf3: Black’s first response"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. Qf3 Qb6 { The queen reaches b6 through c7, which was cleared by c5. This checkpoint focuses on recognizing the first response. The next chapter extends this branch. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. Qf3: opening continuation"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. Qf3 Qb6 { The queen reaches b6 through c7, which was cleared by c5. } 4. Qxb7 Qxb7 5. b3 Qxg2 6. Ba3 Qxf2 {  This is the end of this opening line. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. Qg4: Black’s first response"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. Qg4 Qb6 { The queen reaches b6 through c7, which was cleared by c5. This checkpoint focuses on recognizing the first response. The next chapter extends this branch. } *
+
+[Event "Polish Defense — Introduction"]
+[StudyName "Polish Defense — Introduction"]
+[ChapterName "3. Qg4: opening continuation"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as Black in the Polish Defense. }
+1. e3 { White opens the bishop’s diagonal. } c5 { Black advances the c-pawn, clearing c7 for the queen. } 2. Ba6 { White offers the bishop on a6. } Nxa6 { Black’s knight captures on a6. This is the Polish Defense starting position. } 3. Qg4 Qb6 { The queen reaches b6 through c7, which was cleared by c5. } 4. Qxd7 Kxd7 5. b3 Qxb3 6. axb3 c4 7. Rxa6 bxa6 {  This is the end of this opening line. } *
