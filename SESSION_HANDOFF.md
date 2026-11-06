@@ -97,3 +97,9 @@ filesystems are separate; the user must pull to update the Mac.
 - Latest feature commit at this stopping point: df584bd. TypeScript and move
   validation passed after attribution changes; headless Black training-flow and
   iOS bundling passed when the Polish module was introduced.
+
+## Future idea recorded after the pause
+
+- User wants a future advanced Traps module and supplied a Polish continuation
+  beginning 5...d6. See notes/FUTURE_TRAPS.md for screenshot transcription and
+  unresolved context. They explicitly said not to implement it now.
