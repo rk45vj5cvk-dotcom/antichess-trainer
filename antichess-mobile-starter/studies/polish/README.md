@@ -5,15 +5,14 @@ This module trains White from the standard initial Antichess position:
     1. e3 c5 2. Ba6 Nxa6 3. b4 cxb4 4. d3
 
 The user selected 4. d3 as the critical improvement. The Antichess Opening
-Explorer calls it the Computer Attack. The active course has six progressive
-checkpoints, with 53 replayed plies in total:
+Explorer calls it the Computer Attack. Chapters follow complete opening branches,
+not individual moves. The active course has two chapters, with 23 replayed plies:
 
-1. Reach the Polish Defense (through 2...Nxa6).
-2. Draw the c-pawn to b4 (through 3...cxb4).
-3. The key move: 4. d3.
-4. Meet 4...b3 with 5. cxb3.
-5. After 5...Nc7, advance with 6. b4.
-6. Follow 6...Ne6 7. d4 Nxd4 8. Qxd4 Qc7.
+1. The main opening through 4. d3.
+2. The 4...b3 branch: 5. cxb3 Nc7 6. b4 Ne6 7. d4 Nxd4 8. Qxd4 Qc7.
+
+Both chapters replay from the initial position. Add future chapters for distinct
+Black branches; do not subdivide each move into another lesson.
 
 These are opening checkpoints, not complete games or a complete winning
 repertoire against every Black defense. No generic rule reminders or source

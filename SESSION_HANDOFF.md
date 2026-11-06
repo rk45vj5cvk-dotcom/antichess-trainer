@@ -150,3 +150,17 @@ This supersedes the earlier Black introductory-course plan above.
   or generic rules in lesson comments. Editable PGN remains at the same path.
 - Tests now cover completing the d3 and longer White branch, and existing Black
   regression behavior. Further branching still needs analysis beyond the catalog.
+
+## Chapter structure correction
+
+- User does not want a chapter for every move/checkpoint. Chapter 1 must contain
+  the entire opening through 4. d3; later chapters should cover distinct branches.
+- Polish course now has two chapters: 7-ply foundation and 16-ply ...b3/...Nc7/
+  ...Ne6 continuation (23 replayed plies total), each from the initial position.
+- Updated PGN and generated app data accordingly. Training-flow and legality
+  checks pass. Do not restore the previous six-chapter breakdown.
+- User asks about backing up the unreliable new site. We have 16 cached catalog
+  positions for the inspected Polish subtree, not the entire website, plus the
+  older Nilatac snapshot and all course PGNs. Future bulk preservation should
+  prefer a maintainer-provided export; otherwise use allowed, throttled,
+  resumable retrieval with provenance. No whole-site backup has been performed.

@@ -21,7 +21,7 @@ const audio=new Map();
 const env={React,useState:state,useRef:ref,useEffect:effect,useAudioPlayer:s=>{if(!audio.has(s))audio.set(s,{seekTo:async()=>{},play:()=>{}});return audio.get(s);},setAudioModeAsync:async()=>{},useWindowDimensions:()=>({width:390,height:844}),StyleSheet:{create:x=>x},Linking:{openURL:async()=>{}},pieceSvg:{},require:x=>x,console,setTimeout:fn=>{const id=nextTimer++;timers.set(id,fn);return id;},clearTimeout:id=>timers.delete(id),...pgn,...variant,...fen,...san,...util};
 for(const n of ['SafeAreaView','ScrollView','View','Text','Pressable','TextInput','SvgXml'])env[n]=n;
 const {Board,polishCourse,initialCourse,readCourse}=new Function(...Object.keys(env),js)(...Object.values(env));
-assert.equal(polishCourse.lines.length,6);
+assert.equal(polishCourse.lines.length,2);
 assert.equal(polishCourse.trainingColor,'white');
 assert.equal(polishCourse.title,'Defeating the Polish Defense');
 for(const l of polishCourse.lines){assert.equal(l.fen,fen.makeFen(variant.Antichess.default().toSetup()));assert.deepEqual(l.sans.slice(0,4),['e3','c5','Ba6','Nxa6']);}
@@ -55,7 +55,7 @@ assert.ok(walk(tree,n=>n.props?.accessibilityLabel==='e3 white pawn'));
 for(const e of effects)e?.cleanup?.();slots=[];effects=[];pending=[];timers.clear();
 props={...props,line:initialCourse.lines[0],color:'white'};render();assert.equal(timers.size,0);
 for(const e of effects)e?.cleanup?.();slots=[];effects=[];pending=[];timers.clear();
-props={...props,line:polishCourse.lines[2],title:polishCourse.title,color:'white',chapterIndex:2,chapterCount:3};render();
+props={...props,line:polishCourse.lines[0],title:polishCourse.title,color:'white',chapterIndex:0,chapterCount:2};render();
 square('e2');square('e3');tick();
 square('f1');square('a6');tick();
 square('b2');square('b4');tick();
@@ -63,11 +63,11 @@ square('d2');square('d3');
 assert.ok(walk(tree,n=>n.props?.accessibilityLabel==='d3 white pawn'));
 assert.ok(walk(tree,n=>n.type==='Text'&&n.props.children.includes('Click Next Line.')));
 for(const e of effects)e?.cleanup?.();slots=[];effects=[];pending=[];timers.clear();
-const continuation=polishCourse.lines[5];
-props={...props,line:continuation,chapterIndex:5,chapterCount:6};render();
+const continuation=polishCourse.lines[1];
+props={...props,line:continuation,chapterIndex:1,chapterCount:2};render();
 for(let i=0;i<continuation.moves.length;i+=2){
  const move=util.parseUci(continuation.moves[i]);
  square(util.makeSquare(move.from));square(util.makeSquare(move.to));tick();
 }
 assert.ok(walk(tree,n=>n.type==='Text'&&n.props.children.includes('Click Next Line.')));
-console.log('PASS: 6 initial-position White chapters; d3 and Andrejić branch completion; Black auto-start/replies, wrong-move retry, restart, and White start regression.');
+console.log('PASS: 2 initial-position White chapters; d3 and Andrejić branch completion; Black auto-start/replies, wrong-move retry, restart, and White start regression.');
