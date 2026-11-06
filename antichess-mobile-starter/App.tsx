@@ -127,8 +127,8 @@ const wizardCourse: Course = { ...readCourse(wizardStudy), trainingColor: 'white
 const polishCourse: Course = {
   ...readCourse(polishStudy), trainingColor: 'white',
   attribution: {
-    text: 'Adapted from Cătălin Frâncu’s Nilatac opening book',
-    sourceUrl: 'https://catalin.francu.com/nilatac/',
+    text: 'Opening references: Antichess Opening Explorer (tolius); earlier material: Cătălin Frâncu',
+    sourceUrl: 'https://antichess.onrender.com/openings/',
     licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
   },
 };

@@ -3,8 +3,8 @@
 [ChapterName "Reach the Polish Defense"]
 [Variant "Antichess"]
 [Result "*"]
-[Source "https://catalin.francu.com/nilatac/"]
-[Annotator "Adapted from Cătălin Frâncu / Nilatac; revised to a White repertoire by Antichess Trainer at the user’s direction"]
+[Source "https://antichess.onrender.com/openings/"]
+[Annotator "Antichess Trainer; move references: Antichess Opening Explorer (tolius), with earlier material from Cătălin Frâncu"]
 [License "CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/"]
 
 { Train as White. Replay the opening from the initial position. }
@@ -26,4 +26,31 @@
 [Result "*"]
 
 { Train as White. Replay the opening from the initial position. }
-1. e3 { White opens the bishop’s diagonal. } c5 2. Ba6 { White offers the bishop on a6. } Nxa6 { This is the Polish Defense position. } 3. b4 { Advance the b-pawn to draw Black’s c-pawn away from c5. } cxb4 { Black captures with the c-pawn. White now has the position we want. } 4. d3 { The key move in this repertoire is d3. This is the starting point for the deeper branches we will add. } *
+1. e3 { White opens the bishop’s diagonal. } c5 2. Ba6 { White offers the bishop on a6. } Nxa6 { This is the Polish Defense position. } 3. b4 { Advance the b-pawn to draw Black’s c-pawn away from c5. } cxb4 { Black captures with the c-pawn. White now has the position we want. } 4. d3 { The key move in this repertoire is d3. The next chapters follow Black’s b3 response. } *
+
+[Event "Defeating the Polish Defense"]
+[StudyName "Defeating the Polish Defense"]
+[ChapterName "Meet 4...b3 with 5. cxb3"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as White. Replay the opening from the initial position. }
+1. e3 { White opens the bishop’s diagonal. } c5 2. Ba6 { White offers the bishop on a6. } Nxa6 { This is the Polish Defense position. } 3. b4 { Advance the b-pawn to draw Black’s c-pawn away from c5. } cxb4 { Black captures with the c-pawn. White now has the position we want. } 4. d3 { The key move in this repertoire is d3. The next chapters follow Black’s b3 response. } b3 5. cxb3 { The c-pawn recaptures on b3. Keep track of this pawn: its next advance is important. } *
+
+[Event "Defeating the Polish Defense"]
+[StudyName "Defeating the Polish Defense"]
+[ChapterName "After 5...Nc7: advance with 6. b4"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as White. Replay the opening from the initial position. }
+1. e3 { White opens the bishop’s diagonal. } c5 2. Ba6 { White offers the bishop on a6. } Nxa6 { This is the Polish Defense position. } 3. b4 { Advance the b-pawn to draw Black’s c-pawn away from c5. } cxb4 { Black captures with the c-pawn. White now has the position we want. } 4. d3 { The key move in this repertoire is d3. The next chapters follow Black’s b3 response. } b3 5. cxb3 { The c-pawn recaptures on b3. Keep track of this pawn: its next advance is important. } Nc7 6. b4 { Advance the pawn from b3 to b4. This is the continuation to remember after Nc7. } *
+
+[Event "Defeating the Polish Defense"]
+[StudyName "Defeating the Polish Defense"]
+[ChapterName "The Ne6 branch: d4 and Qxd4"]
+[Variant "Antichess"]
+[Result "*"]
+
+{ Train as White. Replay the opening from the initial position. }
+1. e3 { White opens the bishop’s diagonal. } c5 2. Ba6 { White offers the bishop on a6. } Nxa6 { This is the Polish Defense position. } 3. b4 { Advance the b-pawn to draw Black’s c-pawn away from c5. } cxb4 { Black captures with the c-pawn. White now has the position we want. } 4. d3 { The key move in this repertoire is d3. The next chapters follow Black’s b3 response. } b3 5. cxb3 { The c-pawn recaptures on b3. Keep track of this pawn: its next advance is important. } Nc7 6. b4 { Advance the pawn from b3 to b4. This is the continuation to remember after Nc7. } Ne6 7. d4 { Offer the d-pawn to the knight on e6. } Nxd4 8. Qxd4 { Recapture the knight with the queen. } Qc7 { This chapter ends at the opening checkpoint. The rest of the game is not included. } *

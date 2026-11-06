@@ -131,3 +131,22 @@ This supersedes the earlier Black introductory-course plan above.
 - White-side conversion was validated (TypeScript, training flow, iOS bundle)
   and committed locally before access was available. Not pushed yet: resume
   source inspection and deeper branches when the updated environment is ready.
+
+## New database researched and White course extended
+
+- antichess.onrender.com is now allowed and was inspected. /openings/ is a
+  named-opening catalog; the full solution explorer gives "See Analysis" and
+  no moves after 4. d3. Do not describe catalog labels as independently checked
+  optimal solutions.
+- Active Defeating the Polish Defense course now has six White checkpoints,
+  53 legal replayed plies, all from the initial position.
+- New documented line: 4...b3 5. cxb3 Nc7 6. b4 Ne6 7. d4 Nxd4 8. Qxd4 Qc7.
+  Catalog calls this Andrejić's Proof and marks White wins. The old book's
+  6. Qf3 was not reused.
+- Catalog's 4...Qc7 and 4...Rb8 defenses are unresolved. 5...Nb8 is marked a
+  White win but has no listed continuation. These are not active drill branches.
+- Current evidence and limitations: studies/polish/current-explorer-snapshot.json
+  and studies/polish/README.md. Credit only in first chapter; no database names
+  or generic rules in lesson comments. Editable PGN remains at the same path.
+- Tests now cover completing the d3 and longer White branch, and existing Black
+  regression behavior. Further branching still needs analysis beyond the catalog.

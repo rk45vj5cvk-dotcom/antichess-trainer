@@ -1,0 +1,347 @@
+{
+  "source": "Antichess Opening Explorer",
+  "sourceUrl": "https://antichess.onrender.com/openings/",
+  "retrieved": "2026-11-06",
+  "kind": "named-opening catalog, not a full solution tree",
+  "positions": [
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3",
+      "fen": "r1bqkbnr/pp1ppppp/n7/8/1p6/3PP3/P1P2PPP/RNBQK1NR b - - 0 4",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3",
+          "uci": "b4b3"
+        },
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7",
+          "uci": "d8c7"
+        },
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Rb8",
+          "uci": "a8b8"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "b3",
+            "Jettison Defence",
+            "",
+            "3"
+          ],
+          "evaluationLabels": [
+            "White wins"
+          ]
+        },
+        {
+          "cells": [
+            "♕c7",
+            "Nilatac Defence",
+            "?",
+            "1"
+          ],
+          "evaluationLabels": []
+        },
+        {
+          "cells": [
+            "♖b8",
+            "Witches Defence",
+            "?",
+            "—"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7",
+      "fen": "r1b1kbnr/ppqppppp/n7/8/1p6/3PP3/P1P2PPP/RNBQK1NR w - - 1 5",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7_Nc3",
+          "uci": "b1c3"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♘c3",
+            "—",
+            "—",
+            "1"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7_Nc3",
+      "fen": "r1b1kbnr/ppqppppp/n7/8/1p6/2NPP3/P1P2PPP/R1BQK1NR b - - 2 5",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7_Nc3_Qxc3",
+          "uci": "c7c3"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♕xc3",
+            "—",
+            "—",
+            "1"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7_Nc3_Qxc3",
+      "fen": "r1b1kbnr/pp1ppppp/n7/8/1p6/2qPP3/P1P2PPP/R1BQK1NR w - - 0 6",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7_Nc3_Qxc3_Ne2",
+          "uci": "g1e2"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♘e2",
+            "Nilatac Gambit",
+            "?",
+            "—"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Qc7_Nc3_Qxc3_Ne2",
+      "fen": "r1b1kbnr/pp1ppppp/n7/8/1p6/2qPP3/P1P1NPPP/R1BQK2R b - - 1 6",
+      "moves": [],
+      "catalogRows": [],
+      "leafText": "Nilatac Gambit"
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_Rb8",
+      "fen": "1rbqkbnr/pp1ppppp/n7/8/1p6/3PP3/P1P2PPP/RNBQK1NR w - - 1 5",
+      "moves": [],
+      "catalogRows": [],
+      "leafText": "Witches Defence"
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3",
+      "fen": "r1bqkbnr/pp1ppppp/n7/8/8/1p1PP3/P1P2PPP/RNBQK1NR w - - 0 5",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3",
+          "uci": "c2b3"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "cxb3",
+            "—",
+            "—",
+            "3"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3",
+      "fen": "r1bqkbnr/pp1ppppp/n7/8/8/1P1PP3/P4PPP/RNBQK1NR b - - 0 5",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7",
+          "uci": "a6c7"
+        },
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nb8",
+          "uci": "a6b8"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♘c7",
+            "Andrejić's Proof",
+            "",
+            "1"
+          ],
+          "evaluationLabels": [
+            "White wins"
+          ]
+        },
+        {
+          "cells": [
+            "♘b8",
+            "Andrejić's Proof",
+            "",
+            "—"
+          ],
+          "evaluationLabels": [
+            "White wins"
+          ]
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nb8",
+      "fen": "rnbqkbnr/pp1ppppp/8/8/8/1P1PP3/P4PPP/RNBQK1NR w - - 1 6",
+      "moves": [],
+      "catalogRows": [],
+      "leafText": "Andrejić's Proof White wins"
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7",
+      "fen": "r1bqkbnr/ppnppppp/8/8/8/1P1PP3/P4PPP/RNBQK1NR w - - 1 6",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4",
+          "uci": "b3b4"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "b4",
+            "—",
+            "—",
+            "1"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4",
+      "fen": "r1bqkbnr/ppnppppp/8/8/1P6/3PP3/P4PPP/RNBQK1NR b - - 0 6",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6",
+          "uci": "c7e6"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♘e6",
+            "—",
+            "—",
+            "1"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6",
+      "fen": "r1bqkbnr/pp1ppppp/4n3/8/1P6/3PP3/P4PPP/RNBQK1NR w - - 1 7",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4",
+          "uci": "d3d4"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "d4",
+            "—",
+            "—",
+            "1"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4",
+      "fen": "r1bqkbnr/pp1ppppp/4n3/8/1P1P4/4P3/P4PPP/RNBQK1NR b - - 0 7",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4_Nxd4",
+          "uci": "e6d4"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♘xd4",
+            "—",
+            "—",
+            "1"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4_Nxd4",
+      "fen": "r1bqkbnr/pp1ppppp/8/8/1P1n4/4P3/P4PPP/RNBQK1NR w - - 0 8",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4_Nxd4_Qxd4",
+          "uci": "d1d4"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♕xd4",
+            "—",
+            "—",
+            "1"
+          ],
+          "evaluationLabels": []
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4_Nxd4_Qxd4",
+      "fen": "r1bqkbnr/pp1ppppp/8/8/1P1Q4/4P3/P4PPP/RNB1K1NR b - - 0 8",
+      "moves": [
+        {
+          "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4_Nxd4_Qxd4_Qc7",
+          "uci": "d8c7"
+        }
+      ],
+      "catalogRows": [
+        {
+          "cells": [
+            "♕c7",
+            "Andrejić's Proof",
+            "",
+            "—"
+          ],
+          "evaluationLabels": [
+            "White wins"
+          ]
+        }
+      ],
+      "leafText": ""
+    },
+    {
+      "pgn": "e3_c5_Ba6_Nxa6_b4_cxb4_d3_b3_cxb3_Nc7_b4_Ne6_d4_Nxd4_Qxd4_Qc7",
+      "fen": "r1b1kbnr/ppqppppp/8/8/1P1Q4/4P3/P4PPP/RNB1K1NR w - - 1 9",
+      "moves": [],
+      "catalogRows": [],
+      "leafText": "Andrejić's Proof White wins"
+    }
+  ]
+}
